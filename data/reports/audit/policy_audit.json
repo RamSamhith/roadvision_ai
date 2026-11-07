@@ -1,0 +1,5389 @@
+{
+  "meta": {
+    "generated_utc": "2026-11-05T14:17:46Z",
+    "root": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\raw\\RDD2022",
+    "elapsed_s": 93.1,
+    "countries_filter": null,
+    "python": "3.11.9",
+    "cv2": "5.0.0",
+    "numpy": "2.4.6"
+  },
+  "part_a": {
+    "elapsed_s": 6.8,
+    "xml_files": 38385,
+    "annotated_images": 38385,
+    "images_without_xml": 9035,
+    "images_without_xml_by_country": {
+      "China_MotorBike": 500,
+      "Czech": 709,
+      "India": 1959,
+      "Japan": 2627,
+      "Norway": 2040,
+      "United_States": 1200
+    },
+    "objects_total": 65712,
+    "image_categories": {
+      "only_target": 19221,
+      "mixed_target_oos": 4546,
+      "only_oos": 2894,
+      "empty_xml": 11724,
+      "check_sum_equals_annotated": true
+    },
+    "category_by_country": {
+      "China_Drone": {
+        "empty_xml": 5,
+        "mixed_target_oos": 105,
+        "only_oos": 477,
+        "only_target": 1814
+      },
+      "China_MotorBike": {
+        "mixed_target_oos": 180,
+        "only_oos": 43,
+        "only_target": 1754
+      },
+      "Czech": {
+        "empty_xml": 1757,
+        "only_target": 1072
+      },
+      "India": {
+        "empty_xml": 3921,
+        "mixed_target_oos": 494,
+        "only_oos": 562,
+        "only_target": 2729
+      },
+      "Japan": {
+        "empty_xml": 794,
+        "mixed_target_oos": 3767,
+        "only_oos": 1812,
+        "only_target": 4133
+      },
+      "Norway": {
+        "empty_xml": 5247,
+        "only_target": 2914
+      },
+      "United_States": {
+        "only_target": 4805
+      }
+    },
+    "class_objects": {
+      "D00": 26016,
+      "D10": 11830,
+      "D20": 10617,
+      "D40": 6544,
+      "D44": 5057,
+      "D50": 3581,
+      "Repair": 1046,
+      "D43": 793,
+      "D01": 179,
+      "D11": 45,
+      "Block crack": 3,
+      "D0w0": 1
+    },
+    "class_images": {
+      "D00": 13548,
+      "D20": 8412,
+      "D10": 7709,
+      "D44": 4079,
+      "D40": 3674,
+      "D50": 2638,
+      "Repair": 803,
+      "D43": 753,
+      "D01": 118,
+      "D11": 36,
+      "Block crack": 3,
+      "D0w0": 1
+    },
+    "class_countries": {
+      "Block crack": [
+        "China_Drone"
+      ],
+      "D00": [
+        "China_Drone",
+        "China_MotorBike",
+        "Czech",
+        "India",
+        "Japan",
+        "Norway",
+        "United_States"
+      ],
+      "D01": [
+        "India"
+      ],
+      "D0w0": [
+        "India"
+      ],
+      "D10": [
+        "China_Drone",
+        "China_MotorBike",
+        "Czech",
+        "India",
+        "Japan",
+        "Norway",
+        "United_States"
+      ],
+      "D11": [
+        "India"
+      ],
+      "D20": [
+        "China_Drone",
+        "China_MotorBike",
+        "Czech",
+        "India",
+        "Japan",
+        "Norway",
+        "United_States"
+      ],
+      "D40": [
+        "China_Drone",
+        "China_MotorBike",
+        "Czech",
+        "India",
+        "Japan",
+        "Norway",
+        "United_States"
+      ],
+      "D43": [
+        "India",
+        "Japan"
+      ],
+      "D44": [
+        "India",
+        "Japan"
+      ],
+      "D50": [
+        "India",
+        "Japan"
+      ],
+      "Repair": [
+        "China_Drone",
+        "China_MotorBike"
+      ]
+    },
+    "raw_name_variants": {
+      "'D00'": 26016,
+      "'D10'": 11830,
+      "'D20'": 10617,
+      "'D40'": 6544,
+      "'D44'": 5057,
+      "'D50'": 3581,
+      "'Repair'": 1046,
+      "'D43'": 793,
+      "'D01'": 179,
+      "'D11'": 45,
+      "'Block crack'": 3,
+      "'D0w0'": 1
+    },
+    "names_differing_after_strip": {},
+    "unknown_codes_not_in_known_set": {},
+    "objects_without_name": 0,
+    "target_objects": 55007,
+    "target_objects_retained_after_rules": 55006,
+    "target_objects_excluded": 1,
+    "target_exclusion_reasons": {
+      "degenerate": 1
+    },
+    "target_boxes_clipped": 0,
+    "oos_objects": 10705,
+    "oos_exclusion_reasons": {},
+    "oos_boxes_clipped": 0,
+    "target_objects_in_mixed_images": 9414,
+    "target_objects_retained_in_mixed_images": 9414,
+    "images_with_retained_target": 23767,
+    "images_with_target_but_zero_retained": 0,
+    "mapping_zero_sample": [],
+    "xml_size_mismatch": 0,
+    "xml_without_image": 0,
+    "only_oos_by_code": {
+      "D44": 1464,
+      "D50": 774,
+      "Repair": 520,
+      "D43": 467,
+      "D01": 88,
+      "D11": 25,
+      "Block crack": 1,
+      "D0w0": 1
+    },
+    "only_oos_by_country": {
+      "Japan": 1812,
+      "India": 562,
+      "China_Drone": 477,
+      "China_MotorBike": 43
+    },
+    "only_oos_code_combination": {
+      "D44": 3357,
+      "D50": 1810,
+      "Repair": 802,
+      "D44+D50": 586,
+      "D43": 427,
+      "D43+D50": 202,
+      "D43+D44": 86,
+      "D01": 81,
+      "D43+D44+D50": 38,
+      "D01+D11": 25,
+      "D01+D44": 10,
+      "D11": 8,
+      "Block crack": 2,
+      "Block crack+Repair": 1,
+      "D11+D44": 1,
+      "D0w0": 1,
+      "D11+D50": 1,
+      "D01+D11+D44": 1,
+      "D01+D50": 1
+    },
+    "mixed_by_country": {
+      "Japan": 3767,
+      "India": 494,
+      "China_MotorBike": 180,
+      "China_Drone": 105
+    },
+    "empty_by_country": {
+      "Norway": 5247,
+      "India": 3921,
+      "Czech": 1757,
+      "Japan": 794,
+      "China_Drone": 5
+    }
+  },
+  "part_b": {
+    "hash_parameters": {
+      "exact_duplicate_hash": "sha256 over raw file bytes",
+      "near_duplicate_hash": "64-bit dHash: grayscale, 9x8 INTER_AREA resize, bit = right pixel > left pixel, packbits big-endian",
+      "candidate_generation": "pigeonhole over 8 x 8-bit chunks (exact for Hamming <= 7)",
+      "grouping": "union-find transitive closure over unique hash values",
+      "bucket_cap": "none; identical hashes collapsed before comparison",
+      "implementation_check": {
+        "checked": 300,
+        "agreement": 300,
+        "all_match": true
+      }
+    },
+    "bucket_statistics": {
+      "unique_hashes": 47308,
+      "chunks": 8,
+      "chunk_bits": 8,
+      "buckets_total": 2048,
+      "largest_bucket_unique_hashes": 2567,
+      "buckets_over_5000": 0,
+      "pairwise_comparisons": 88946102,
+      "pairs_within_max_distance": 35227,
+      "max_distance_enumerated": 6
+    },
+    "distance_histogram": {
+      "1": 239,
+      "2": 697,
+      "3": 1759,
+      "4": 4169,
+      "5": 9122,
+      "6": 19241
+    },
+    "threshold_study": {
+      "0": {
+        "groups": 73,
+        "images_in_groups": 185,
+        "largest_group": 12,
+        "pairs_at_distance_0_identical_hash": 224,
+        "pairs_with_hamming_1_to_threshold": 0
+      },
+      "1": {
+        "groups": 198,
+        "images_in_groups": 546,
+        "largest_group": 36,
+        "pairs_at_distance_0_identical_hash": 224,
+        "pairs_with_hamming_1_to_threshold": 239
+      },
+      "2": {
+        "groups": 399,
+        "images_in_groups": 1236,
+        "largest_group": 111,
+        "pairs_at_distance_0_identical_hash": 224,
+        "pairs_with_hamming_1_to_threshold": 936
+      },
+      "3": {
+        "groups": 636,
+        "images_in_groups": 2416,
+        "largest_group": 360,
+        "pairs_at_distance_0_identical_hash": 224,
+        "pairs_with_hamming_1_to_threshold": 2695
+      },
+      "4": {
+        "groups": 956,
+        "images_in_groups": 4296,
+        "largest_group": 1352,
+        "pairs_at_distance_0_identical_hash": 224,
+        "pairs_with_hamming_1_to_threshold": 6864
+      },
+      "5": {
+        "groups": 1152,
+        "images_in_groups": 6642,
+        "largest_group": 2889,
+        "pairs_at_distance_0_identical_hash": 224,
+        "pairs_with_hamming_1_to_threshold": 15986
+      },
+      "6": {
+        "groups": 1313,
+        "images_in_groups": 9630,
+        "largest_group": 5347,
+        "pairs_at_distance_0_identical_hash": 224,
+        "pairs_with_hamming_1_to_threshold": 35227
+      }
+    },
+    "threshold_pixel_verification": {
+      "1": {
+        "pairs_available": 239,
+        "pairs_sampled": 239,
+        "correlation_median": 0.9509,
+        "correlation_p10": 0.7425,
+        "correlation_min": 0.2026,
+        "mad_median": 0.0212,
+        "mad_p90": 0.0984,
+        "fraction_corr_below_0_90": 0.2134,
+        "fraction_corr_below_0_75": 0.1046,
+        "suspicious_samples": [
+          {
+            "a": "India/test/images/India_007382.jpg",
+            "b": "India/train/images/India_007878.jpg",
+            "corr": 0.6575
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_000040.jpg",
+            "b": "China_Drone/train/images/China_Drone_000144.jpg",
+            "corr": 0.7298
+          },
+          {
+            "a": "India/train/images/India_000870.jpg",
+            "b": "India/train/images/India_005670.jpg",
+            "corr": 0.7231
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_001626.jpg",
+            "b": "China_Drone/train/images/China_Drone_000716.jpg",
+            "corr": 0.6271
+          },
+          {
+            "a": "India/test/images/India_006866.jpg",
+            "b": "India/train/images/India_004025.jpg",
+            "corr": 0.6995
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_001278.jpg",
+            "b": "India/train/images/India_007525.jpg",
+            "corr": 0.2727
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_001026.jpg",
+            "b": "China_Drone/train/images/China_Drone_000176.jpg",
+            "corr": 0.3166
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_000176.jpg",
+            "b": "China_Drone/train/images/China_Drone_001487.jpg",
+            "corr": 0.358
+          },
+          {
+            "a": "India/train/images/India_000938.jpg",
+            "b": "China_Drone/train/images/China_Drone_001278.jpg",
+            "corr": 0.4403
+          },
+          {
+            "a": "India/train/images/India_007878.jpg",
+            "b": "India/train/images/India_002600.jpg",
+            "corr": 0.6073
+          }
+        ]
+      },
+      "2": {
+        "pairs_available": 697,
+        "pairs_sampled": 250,
+        "correlation_median": 0.9339,
+        "correlation_p10": 0.5587,
+        "correlation_min": 0.1764,
+        "mad_median": 0.0393,
+        "mad_p90": 0.1634,
+        "fraction_corr_below_0_90": 0.348,
+        "fraction_corr_below_0_75": 0.172,
+        "suspicious_samples": [
+          {
+            "a": "China_Drone/train/images/China_Drone_001606.jpg",
+            "b": "China_Drone/train/images/China_Drone_000661.jpg",
+            "corr": 0.7407
+          },
+          {
+            "a": "India/train/images/India_001889.jpg",
+            "b": "China_Drone/train/images/China_Drone_001278.jpg",
+            "corr": 0.3267
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_000499.jpg",
+            "b": "China_Drone/train/images/China_Drone_001126.jpg",
+            "corr": 0.7138
+          },
+          {
+            "a": "India/train/images/India_003191.jpg",
+            "b": "India/test/images/India_007743.jpg",
+            "corr": 0.4102
+          },
+          {
+            "a": "Japan/train/images/Japan_008609.jpg",
+            "b": "India/test/images/India_001762.jpg",
+            "corr": 0.2535
+          },
+          {
+            "a": "Norway/test/images/Norway_008549.jpg",
+            "b": "Norway/train/images/Norway_006407.jpg",
+            "corr": 0.535
+          },
+          {
+            "a": "India/train/images/India_003191.jpg",
+            "b": "India/test/images/India_007885.jpg",
+            "corr": 0.5659
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_000753.jpg",
+            "b": "China_Drone/train/images/China_Drone_001126.jpg",
+            "corr": 0.687
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_001163.jpg",
+            "b": "China_Drone/train/images/China_Drone_001487.jpg",
+            "corr": 0.493
+          },
+          {
+            "a": "Norway/train/images/Norway_006473.jpg",
+            "b": "Norway/train/images/Norway_004062.jpg",
+            "corr": 0.4495
+          }
+        ]
+      },
+      "3": {
+        "pairs_available": 1759,
+        "pairs_sampled": 250,
+        "correlation_median": 0.9088,
+        "correlation_p10": 0.6098,
+        "correlation_min": -0.0069,
+        "mad_median": 0.062,
+        "mad_p90": 0.166,
+        "fraction_corr_below_0_90": 0.448,
+        "fraction_corr_below_0_75": 0.18,
+        "suspicious_samples": [
+          {
+            "a": "Norway/test/images/Norway_008267.jpg",
+            "b": "China_Drone/train/images/China_Drone_001693.jpg",
+            "corr": 0.3652
+          },
+          {
+            "a": "Norway/train/images/Norway_006270.jpg",
+            "b": "Norway/train/images/Norway_008087.jpg",
+            "corr": 0.7027
+          },
+          {
+            "a": "India/test/images/India_001274.jpg",
+            "b": "China_Drone/train/images/China_Drone_000186.jpg",
+            "corr": 0.1522
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_000558.jpg",
+            "b": "China_Drone/train/images/China_Drone_000034.jpg",
+            "corr": 0.4971
+          },
+          {
+            "a": "Norway/test/images/Norway_010170.jpg",
+            "b": "Norway/test/images/Norway_008749.jpg",
+            "corr": 0.7415
+          },
+          {
+            "a": "India/train/images/India_005039.jpg",
+            "b": "India/train/images/India_002600.jpg",
+            "corr": 0.6956
+          },
+          {
+            "a": "Norway/train/images/Norway_005969.jpg",
+            "b": "Norway/test/images/Norway_008352.jpg",
+            "corr": 0.496
+          },
+          {
+            "a": "Japan/train/images/Japan_003538.jpg",
+            "b": "India/train/images/India_003191.jpg",
+            "corr": 0.7011
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_001791.jpg",
+            "b": "China_Drone/train/images/China_Drone_001220.jpg",
+            "corr": 0.5854
+          },
+          {
+            "a": "Norway/train/images/Norway_001216.jpg",
+            "b": "Norway/train/images/Norway_007734.jpg",
+            "corr": 0.6568
+          }
+        ]
+      },
+      "4": {
+        "pairs_available": 4169,
+        "pairs_sampled": 250,
+        "correlation_median": 0.8801,
+        "correlation_p10": 0.6178,
+        "correlation_min": 0.1127,
+        "mad_median": 0.0802,
+        "mad_p90": 0.197,
+        "fraction_corr_below_0_90": 0.56,
+        "fraction_corr_below_0_75": 0.212,
+        "suspicious_samples": [
+          {
+            "a": "Norway/train/images/Norway_001486.jpg",
+            "b": "United_States/test/images/United_States_005115.jpg",
+            "corr": 0.1127
+          },
+          {
+            "a": "Norway/train/images/Norway_002548.jpg",
+            "b": "India/train/images/India_007822.jpg",
+            "corr": 0.6932
+          },
+          {
+            "a": "Norway/train/images/Norway_005457.jpg",
+            "b": "Norway/train/images/Norway_000842.jpg",
+            "corr": 0.5736
+          },
+          {
+            "a": "India/train/images/India_005834.jpg",
+            "b": "India/train/images/India_001971.jpg",
+            "corr": 0.6178
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_002058.jpg",
+            "b": "India/train/images/India_004251.jpg",
+            "corr": 0.3216
+          },
+          {
+            "a": "India/train/images/India_003114.jpg",
+            "b": "India/train/images/India_007878.jpg",
+            "corr": 0.7445
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_000581.jpg",
+            "b": "China_Drone/train/images/China_Drone_002071.jpg",
+            "corr": 0.6355
+          },
+          {
+            "a": "India/test/images/India_005596.jpg",
+            "b": "India/train/images/India_002587.jpg",
+            "corr": 0.7085
+          },
+          {
+            "a": "Norway/test/images/Norway_008549.jpg",
+            "b": "Norway/train/images/Norway_007742.jpg",
+            "corr": 0.647
+          },
+          {
+            "a": "Norway/train/images/Norway_001598.jpg",
+            "b": "Norway/train/images/Norway_004065.jpg",
+            "corr": 0.4167
+          }
+        ]
+      },
+      "5": {
+        "pairs_available": 9122,
+        "pairs_sampled": 250,
+        "correlation_median": 0.8614,
+        "correlation_p10": 0.5421,
+        "correlation_min": 0.1212,
+        "mad_median": 0.0877,
+        "mad_p90": 0.2119,
+        "fraction_corr_below_0_90": 0.648,
+        "fraction_corr_below_0_75": 0.264,
+        "suspicious_samples": [
+          {
+            "a": "Norway/train/images/Norway_001383.jpg",
+            "b": "Norway/train/images/Norway_001939.jpg",
+            "corr": 0.7244
+          },
+          {
+            "a": "Norway/train/images/Norway_002545.jpg",
+            "b": "Norway/train/images/Norway_006505.jpg",
+            "corr": 0.6239
+          },
+          {
+            "a": "India/train/images/India_009027.jpg",
+            "b": "China_Drone/train/images/China_Drone_000186.jpg",
+            "corr": 0.2274
+          },
+          {
+            "a": "China_Drone/train/images/China_Drone_000186.jpg",
+            "b": "India/train/images/India_006349.jpg",
+            "corr": 0.1332
+          },
+          {
+            "a": "Norway/test/images/Norway_008549.jpg",
+            "b": "Norway/train/images/Norway_004015.jpg",
+            "corr": 0.6724
+          },
+          {
+            "a": "India/test/images/India_003355.jpg",
+            "b": "Japan/train/images/Japan_008613.jpg",
+            "corr": 0.2043
+          },
+          {
+            "a": "Norway/train/images/Norway_006442.jpg",
+            "b": "Norway/train/images/Norway_000324.jpg",
+            "corr": 0.5334
+          },
+          {
+            "a": "India/train/images/India_005121.jpg",
+            "b": "India/train/images/India_001544.jpg",
+            "corr": 0.4311
+          },
+          {
+            "a": "India/train/images/India_000135.jpg",
+            "b": "India/test/images/India_004372.jpg",
+            "corr": 0.6925
+          },
+          {
+            "a": "Norway/train/images/Norway_001131.jpg",
+            "b": "Norway/train/images/Norway_004796.jpg",
+            "corr": 0.6861
+          }
+        ]
+      },
+      "6": {
+        "pairs_available": 19241,
+        "pairs_sampled": 250,
+        "correlation_median": 0.7844,
+        "correlation_p10": 0.5132,
+        "correlation_min": -0.1438,
+        "mad_median": 0.1167,
+        "mad_p90": 0.2346,
+        "fraction_corr_below_0_90": 0.808,
+        "fraction_corr_below_0_75": 0.424,
+        "suspicious_samples": [
+          {
+            "a": "China_Drone/train/images/China_Drone_000173.jpg",
+            "b": "China_MotorBike/train/images/China_MotorBike_000635.jpg",
+            "corr": 0.7348
+          },
+          {
+            "a": "Norway/train/images/Norway_004096.jpg",
+            "b": "Norway/train/images/Norway_008137.jpg",
+            "corr": 0.7431
+          },
+          {
+            "a": "India/train/images/India_001979.jpg",
+            "b": "India/test/images/India_000100.jpg",
+            "corr": 0.691
+          },
+          {
+            "a": "Norway/test/images/Norway_010170.jpg",
+            "b": "Norway/train/images/Norway_006473.jpg",
+            "corr": 0.6526
+          },
+          {
+            "a": "India/train/images/India_000219.jpg",
+            "b": "India/train/images/India_002093.jpg",
+            "corr": 0.6673
+          },
+          {
+            "a": "Norway/train/images/Norway_006478.jpg",
+            "b": "Norway/train/images/Norway_005009.jpg",
+            "corr": 0.7163
+          },
+          {
+            "a": "Norway/train/images/Norway_001182.jpg",
+            "b": "Norway/train/images/Norway_007955.jpg",
+            "corr": 0.5063
+          },
+          {
+            "a": "United_States/train/images/United_States_001329.jpg",
+            "b": "India/test/images/India_006762.jpg",
+            "corr": 0.7037
+          },
+          {
+            "a": "Norway/test/images/Norway_008469.jpg",
+            "b": "Norway/train/images/Norway_004795.jpg",
+            "corr": 0.7004
+          },
+          {
+            "a": "India/train/images/India_006342.jpg",
+            "b": "India/test/images/India_002990.jpg",
+            "corr": 0.1485
+          }
+        ]
+      }
+    },
+    "sequential_frame_analysis": {
+      "consecutive_pairs": 47407,
+      "distance_histogram": {
+        "25+": 34828,
+        "17-24": 11260,
+        "13-16": 1069,
+        "9-12": 216,
+        "7-8": 24,
+        "3-4": 2,
+        "5-6": 7,
+        "0-2": 1
+      },
+      "distance_median": 28.0,
+      "distance_p90": 36.0,
+      "distance_p95": 38.0,
+      "distance_p99": 42.0,
+      "fraction_within": {
+        "3": 0.0,
+        "4": 0.0001,
+        "5": 0.0001,
+        "6": 0.0002,
+        "8": 0.0007,
+        "10": 0.0019,
+        "12": 0.0053,
+        "16": 0.0278
+      },
+      "per_country_median": {
+        "China_Drone": 31.0,
+        "China_MotorBike": 31.0,
+        "Czech": 27.0,
+        "India": 26.0,
+        "Japan": 30.0,
+        "Norway": 26.0,
+        "United_States": 31.0
+      },
+      "pixel_sample": {
+        "pairs": 120,
+        "correlation_median": 0.3036,
+        "correlation_p10": -0.1009,
+        "fraction_corr_above_0_90": 0.0,
+        "mad_median": 0.2014
+      }
+    },
+    "exact_duplicate_groups": 2,
+    "exact_duplicate_extra_files": 2,
+    "exact_duplicate_examples": [
+      {
+        "size": 2,
+        "members": [
+          "United_States/test/images/United_States_005833.jpg",
+          "United_States/train/images/United_States_003260.jpg"
+        ],
+        "splits": [
+          "United_States/no_xml",
+          "train"
+        ],
+        "categories": {
+          "no_xml": 1,
+          "only_target": 1
+        }
+      },
+      {
+        "size": 2,
+        "members": [
+          "United_States/train/images/United_States_001623.jpg",
+          "United_States/train/images/United_States_003917.jpg"
+        ],
+        "splits": [
+          "train"
+        ],
+        "categories": {
+          "only_target": 2
+        }
+      }
+    ],
+    "near_duplicates_at_threshold_3": {
+      "threshold": 3,
+      "groups": 636,
+      "images_in_groups": 2416,
+      "size_distribution_top": [
+        360,
+        226,
+        37,
+        30,
+        25,
+        21,
+        17,
+        16,
+        14,
+        14,
+        13,
+        11,
+        11,
+        10,
+        10,
+        9,
+        9,
+        9,
+        8,
+        8
+      ],
+      "largest_group": 360,
+      "groups_by_size": {
+        "2": 435,
+        "3": 104,
+        "4": 41,
+        "5": 15,
+        "6": 12,
+        "7": 7,
+        "8": 4,
+        "9": 3,
+        "10": 2,
+        "11": 2,
+        "13": 1,
+        "14": 2,
+        "16": 1,
+        "17": 1,
+        "21": 1,
+        "25": 1,
+        "30": 1,
+        "37": 1,
+        "226": 1,
+        "360": 1
+      },
+      "cross_split_group_count": 220,
+      "split_signatures": {
+        "train": 405,
+        "no_xml|train": 220,
+        "no_xml": 11
+      },
+      "cross_country_group_count": 11,
+      "label_inconsistent_group_count": 79,
+      "chained_group_count": 160
+    },
+    "near_cross_split_groups": [
+      {
+        "group_id": 0,
+        "size": 11,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_000173.jpg",
+          "China_Drone/train/images/China_Drone_000581.jpg",
+          "China_Drone/train/images/China_Drone_000997.jpg",
+          "China_Drone/train/images/China_Drone_001132.jpg",
+          "China_Drone/train/images/China_Drone_001157.jpg",
+          "China_Drone/train/images/China_Drone_001399.jpg",
+          "China_Drone/train/images/China_Drone_001456.jpg",
+          "China_Drone/train/images/China_Drone_001702.jpg"
+        ]
+      },
+      {
+        "group_id": 2,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_009651.jpg",
+          "India/train/images/India_007756.jpg"
+        ]
+      },
+      {
+        "group_id": 3,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001937.jpg",
+          "India/train/images/India_006620.jpg",
+          "India/train/images/India_008381.jpg"
+        ]
+      },
+      {
+        "group_id": 5,
+        "size": 8,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008521.jpg",
+          "Norway/train/images/Norway_000390.jpg",
+          "Norway/train/images/Norway_000563.jpg",
+          "Norway/train/images/Norway_001932.jpg",
+          "Norway/train/images/Norway_003001.jpg",
+          "Norway/train/images/Norway_004556.jpg",
+          "Norway/train/images/Norway_004775.jpg",
+          "Norway/train/images/Norway_005124.jpg"
+        ]
+      },
+      {
+        "group_id": 7,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002223.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000583.jpg"
+        ]
+      },
+      {
+        "group_id": 8,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_012070.jpg",
+          "Japan/train/images/Japan_008520.jpg",
+          "Japan/train/images/Japan_011207.jpg"
+        ]
+      },
+      {
+        "group_id": 11,
+        "size": 13,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008279.jpg",
+          "Norway/test/images/Norway_008626.jpg",
+          "Norway/test/images/Norway_009091.jpg",
+          "Norway/train/images/Norway_000666.jpg",
+          "Norway/train/images/Norway_001653.jpg",
+          "Norway/train/images/Norway_002660.jpg",
+          "Norway/train/images/Norway_002987.jpg",
+          "Norway/train/images/Norway_003279.jpg"
+        ]
+      },
+      {
+        "group_id": 13,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009268.jpg",
+          "Norway/train/images/Norway_003032.jpg",
+          "Norway/train/images/Norway_007384.jpg"
+        ]
+      },
+      {
+        "group_id": 19,
+        "size": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009309.jpg",
+          "Norway/test/images/Norway_010078.jpg",
+          "Norway/train/images/Norway_001129.jpg",
+          "Norway/train/images/Norway_003491.jpg",
+          "Norway/train/images/Norway_006005.jpg",
+          "Norway/train/images/Norway_007902.jpg"
+        ]
+      },
+      {
+        "group_id": 22,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008894.jpg",
+          "Norway/train/images/Norway_003741.jpg"
+        ]
+      },
+      {
+        "group_id": 24,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009561.jpg",
+          "Norway/train/images/Norway_004339.jpg",
+          "Norway/train/images/Norway_006099.jpg",
+          "Norway/train/images/Norway_007124.jpg"
+        ]
+      },
+      {
+        "group_id": 29,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008215.jpg",
+          "Norway/train/images/Norway_005680.jpg",
+          "Norway/train/images/Norway_007063.jpg"
+        ]
+      },
+      {
+        "group_id": 31,
+        "size": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002002.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002259.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000268.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000506.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000951.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001496.jpg"
+        ]
+      },
+      {
+        "group_id": 33,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_010163.jpg",
+          "Norway/train/images/Norway_006226.jpg"
+        ]
+      },
+      {
+        "group_id": 37,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_004503.jpg",
+          "India/train/images/India_001593.jpg"
+        ]
+      },
+      {
+        "group_id": 42,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009827.jpg",
+          "Norway/train/images/Norway_001754.jpg"
+        ]
+      },
+      {
+        "group_id": 46,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009726.jpg",
+          "Norway/train/images/Norway_007603.jpg"
+        ]
+      },
+      {
+        "group_id": 47,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001862.jpg",
+          "India/train/images/India_000772.jpg",
+          "India/train/images/India_007218.jpg"
+        ]
+      },
+      {
+        "group_id": 49,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_008729.jpg",
+          "India/train/images/India_006526.jpg",
+          "India/train/images/India_008526.jpg"
+        ]
+      },
+      {
+        "group_id": 50,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_005585.jpg",
+          "India/train/images/India_006763.jpg"
+        ]
+      },
+      {
+        "group_id": 51,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_008427.jpg",
+          "India/train/images/India_000041.jpg",
+          "India/train/images/India_000321.jpg"
+        ]
+      },
+      {
+        "group_id": 52,
+        "size": 226,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_001249.jpg",
+          "China_Drone/train/images/China_Drone_001693.jpg",
+          "Norway/test/images/Norway_008199.jpg",
+          "Norway/test/images/Norway_008201.jpg",
+          "Norway/test/images/Norway_008210.jpg",
+          "Norway/test/images/Norway_008267.jpg",
+          "Norway/test/images/Norway_008290.jpg",
+          "Norway/test/images/Norway_008308.jpg"
+        ]
+      },
+      {
+        "group_id": 53,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_009784.jpg",
+          "India/train/images/India_007685.jpg"
+        ]
+      },
+      {
+        "group_id": 54,
+        "size": 360,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_000186.jpg",
+          "China_Drone/train/images/China_Drone_000443.jpg",
+          "China_Drone/train/images/China_Drone_001031.jpg",
+          "China_Drone/train/images/China_Drone_001278.jpg",
+          "China_Drone/train/images/China_Drone_001941.jpg",
+          "India/test/images/India_000015.jpg",
+          "India/test/images/India_000070.jpg",
+          "India/test/images/India_000266.jpg"
+        ]
+      },
+      {
+        "group_id": 55,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_007447.jpg",
+          "India/train/images/India_006427.jpg"
+        ]
+      },
+      {
+        "group_id": 56,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002021.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001069.jpg"
+        ]
+      },
+      {
+        "group_id": 58,
+        "size": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002188.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000090.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000219.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000867.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001793.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001883.jpg"
+        ]
+      },
+      {
+        "group_id": 60,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002033.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001115.jpg"
+        ]
+      },
+      {
+        "group_id": 63,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003779.jpg",
+          "India/train/images/India_008890.jpg"
+        ]
+      },
+      {
+        "group_id": 64,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_000867.jpg",
+          "Czech/test/images/Czech_000913.jpg",
+          "Czech/train/images/Czech_002044.jpg"
+        ]
+      },
+      {
+        "group_id": 65,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_002249.jpg",
+          "Czech/train/images/Czech_003221.jpg"
+        ]
+      },
+      {
+        "group_id": 66,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_001156.jpg",
+          "Czech/train/images/Czech_003235.jpg"
+        ]
+      },
+      {
+        "group_id": 68,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009289.jpg",
+          "Norway/train/images/Norway_005324.jpg"
+        ]
+      },
+      {
+        "group_id": 72,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_003040.jpg",
+          "Czech/train/images/Czech_002783.jpg"
+        ]
+      },
+      {
+        "group_id": 73,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "United_States/test/images/United_States_005833.jpg",
+          "United_States/train/images/United_States_003260.jpg"
+        ]
+      },
+      {
+        "group_id": 78,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009488.jpg",
+          "Norway/test/images/Norway_010109.jpg",
+          "Norway/train/images/Norway_006175.jpg"
+        ]
+      },
+      {
+        "group_id": 85,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008957.jpg",
+          "Norway/train/images/Norway_005773.jpg"
+        ]
+      },
+      {
+        "group_id": 89,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009164.jpg",
+          "Norway/test/images/Norway_010044.jpg",
+          "Norway/train/images/Norway_001240.jpg",
+          "Norway/train/images/Norway_004277.jpg"
+        ]
+      },
+      {
+        "group_id": 98,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002028.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000439.jpg"
+        ]
+      },
+      {
+        "group_id": 99,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002352.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001060.jpg"
+        ]
+      },
+      {
+        "group_id": 113,
+        "size": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_009515.jpg",
+          "India/train/images/India_001445.jpg",
+          "India/train/images/India_003500.jpg",
+          "India/train/images/India_003671.jpg",
+          "India/train/images/India_004665.jpg",
+          "India/train/images/India_009321.jpg"
+        ]
+      },
+      {
+        "group_id": 115,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_002744.jpg",
+          "India/train/images/India_006110.jpg"
+        ]
+      },
+      {
+        "group_id": 121,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003336.jpg",
+          "India/train/images/India_008527.jpg"
+        ]
+      },
+      {
+        "group_id": 123,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_009204.jpg",
+          "India/train/images/India_007427.jpg"
+        ]
+      },
+      {
+        "group_id": 125,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002181.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001768.jpg"
+        ]
+      },
+      {
+        "group_id": 130,
+        "size": 17,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002330.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002467.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000027.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000211.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000638.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000729.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000743.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000886.jpg"
+        ]
+      },
+      {
+        "group_id": 131,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_012060.jpg",
+          "Japan/train/images/Japan_012096.jpg"
+        ]
+      },
+      {
+        "group_id": 137,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002393.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000890.jpg"
+        ]
+      },
+      {
+        "group_id": 138,
+        "size": 11,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_002577.jpg",
+          "India/test/images/India_002959.jpg",
+          "India/test/images/India_005460.jpg",
+          "India/test/images/India_008072.jpg",
+          "India/test/images/India_008602.jpg",
+          "India/test/images/India_009566.jpg",
+          "India/train/images/India_000276.jpg",
+          "India/train/images/India_001097.jpg"
+        ]
+      },
+      {
+        "group_id": 139,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003390.jpg",
+          "India/train/images/India_005352.jpg"
+        ]
+      },
+      {
+        "group_id": 142,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002185.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000438.jpg"
+        ]
+      },
+      {
+        "group_id": 143,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_007406.jpg",
+          "Japan/train/images/Japan_010223.jpg"
+        ]
+      },
+      {
+        "group_id": 144,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_012085.jpg",
+          "Japan/train/images/Japan_000700.jpg"
+        ]
+      },
+      {
+        "group_id": 147,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003910.jpg",
+          "India/train/images/India_009055.jpg"
+        ]
+      },
+      {
+        "group_id": 149,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001108.jpg",
+          "India/train/images/India_006507.jpg"
+        ]
+      },
+      {
+        "group_id": 155,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008580.jpg",
+          "Norway/train/images/Norway_001554.jpg"
+        ]
+      },
+      {
+        "group_id": 166,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002315.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000981.jpg"
+        ]
+      },
+      {
+        "group_id": 178,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002080.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000815.jpg"
+        ]
+      },
+      {
+        "group_id": 179,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002174.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002433.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000787.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001775.jpg"
+        ]
+      },
+      {
+        "group_id": 180,
+        "size": 10,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_005292.jpg",
+          "India/train/images/India_000135.jpg",
+          "India/train/images/India_000258.jpg",
+          "India/train/images/India_001304.jpg",
+          "India/train/images/India_001732.jpg",
+          "India/train/images/India_002275.jpg",
+          "India/train/images/India_003673.jpg",
+          "India/train/images/India_006038.jpg"
+        ]
+      },
+      {
+        "group_id": 181,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_007957.jpg",
+          "India/train/images/India_003179.jpg"
+        ]
+      },
+      {
+        "group_id": 190,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002005.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000101.jpg"
+        ]
+      },
+      {
+        "group_id": 194,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_000161.jpg",
+          "India/train/images/India_003558.jpg",
+          "India/train/images/India_006125.jpg"
+        ]
+      },
+      {
+        "group_id": 198,
+        "size": 14,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002308.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002399.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002401.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000118.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000292.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000766.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001008.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001265.jpg"
+        ]
+      },
+      {
+        "group_id": 200,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002339.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000613.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001481.jpg"
+        ]
+      },
+      {
+        "group_id": 202,
+        "size": 7,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_001981.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000160.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000374.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001004.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001228.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001235.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001418.jpg"
+        ]
+      },
+      {
+        "group_id": 206,
+        "size": 8,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002211.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000378.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000381.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000663.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001252.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001323.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001620.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001797.jpg"
+        ]
+      },
+      {
+        "group_id": 207,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_002482.jpg",
+          "Japan/train/images/Japan_008905.jpg"
+        ]
+      },
+      {
+        "group_id": 208,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_006770.jpg",
+          "Japan/train/images/Japan_011986.jpg"
+        ]
+      },
+      {
+        "group_id": 210,
+        "size": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002160.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000181.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000845.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000857.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001463.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001741.jpg"
+        ]
+      },
+      {
+        "group_id": 211,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002155.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001427.jpg"
+        ]
+      },
+      {
+        "group_id": 214,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_007103.jpg",
+          "India/train/images/India_005825.jpg"
+        ]
+      },
+      {
+        "group_id": 218,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002426.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001290.jpg"
+        ]
+      },
+      {
+        "group_id": 223,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002012.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000628.jpg"
+        ]
+      },
+      {
+        "group_id": 224,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002293.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001063.jpg"
+        ]
+      },
+      {
+        "group_id": 226,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002170.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002212.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001596.jpg"
+        ]
+      },
+      {
+        "group_id": 227,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_005232.jpg",
+          "Japan/train/images/Japan_009339.jpg",
+          "Japan/train/images/Japan_012465.jpg"
+        ]
+      },
+      {
+        "group_id": 231,
+        "size": 5,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003442.jpg",
+          "India/train/images/India_001571.jpg",
+          "India/train/images/India_002166.jpg",
+          "India/train/images/India_003866.jpg",
+          "India/train/images/India_004255.jpg"
+        ]
+      },
+      {
+        "group_id": 233,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002024.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001573.jpg"
+        ]
+      },
+      {
+        "group_id": 234,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_005636.jpg",
+          "Japan/train/images/Japan_003745.jpg"
+        ]
+      },
+      {
+        "group_id": 243,
+        "size": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002400.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000367.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000687.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000945.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001334.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001944.jpg"
+        ]
+      },
+      {
+        "group_id": 248,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002079.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002217.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000744.jpg"
+        ]
+      },
+      {
+        "group_id": 250,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_006207.jpg",
+          "India/train/images/India_009524.jpg"
+        ]
+      },
+      {
+        "group_id": 252,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008690.jpg",
+          "Norway/train/images/Norway_003212.jpg"
+        ]
+      },
+      {
+        "group_id": 253,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009398.jpg",
+          "Norway/train/images/Norway_004325.jpg"
+        ]
+      },
+      {
+        "group_id": 255,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008330.jpg",
+          "Norway/train/images/Norway_000745.jpg",
+          "Norway/train/images/Norway_006635.jpg"
+        ]
+      },
+      {
+        "group_id": 256,
+        "size": 37,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008261.jpg",
+          "Norway/test/images/Norway_008778.jpg",
+          "Norway/test/images/Norway_009218.jpg",
+          "Norway/test/images/Norway_009354.jpg",
+          "Norway/test/images/Norway_009990.jpg",
+          "Norway/train/images/Norway_000203.jpg",
+          "Norway/train/images/Norway_001069.jpg",
+          "Norway/train/images/Norway_001158.jpg"
+        ]
+      },
+      {
+        "group_id": 257,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008735.jpg",
+          "Norway/train/images/Norway_000919.jpg"
+        ]
+      },
+      {
+        "group_id": 259,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009174.jpg",
+          "Norway/test/images/Norway_009937.jpg",
+          "Norway/train/images/Norway_000406.jpg",
+          "Norway/train/images/Norway_007024.jpg"
+        ]
+      },
+      {
+        "group_id": 265,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_005657.jpg",
+          "India/train/images/India_008985.jpg"
+        ]
+      },
+      {
+        "group_id": 266,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008473.jpg",
+          "Norway/train/images/Norway_001233.jpg",
+          "Norway/train/images/Norway_002402.jpg",
+          "Norway/train/images/Norway_006408.jpg"
+        ]
+      },
+      {
+        "group_id": 267,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009261.jpg",
+          "Norway/train/images/Norway_001462.jpg"
+        ]
+      },
+      {
+        "group_id": 268,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002290.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001102.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001840.jpg"
+        ]
+      },
+      {
+        "group_id": 269,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009095.jpg",
+          "Norway/train/images/Norway_005245.jpg"
+        ]
+      },
+      {
+        "group_id": 274,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002138.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001702.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001869.jpg"
+        ]
+      },
+      {
+        "group_id": 276,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_007446.jpg",
+          "India/train/images/India_001626.jpg",
+          "India/train/images/India_008553.jpg"
+        ]
+      },
+      {
+        "group_id": 277,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_007577.jpg",
+          "India/train/images/India_001863.jpg"
+        ]
+      },
+      {
+        "group_id": 279,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_009834.jpg",
+          "Japan/train/images/Japan_006635.jpg"
+        ]
+      },
+      {
+        "group_id": 288,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009693.jpg",
+          "Norway/train/images/Norway_005497.jpg"
+        ]
+      },
+      {
+        "group_id": 291,
+        "size": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009235.jpg",
+          "Norway/test/images/Norway_009362.jpg",
+          "Norway/train/images/Norway_001024.jpg",
+          "Norway/train/images/Norway_002814.jpg",
+          "Norway/train/images/Norway_006511.jpg",
+          "Norway/train/images/Norway_006827.jpg"
+        ]
+      },
+      {
+        "group_id": 293,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_002847.jpg",
+          "Czech/train/images/Czech_001814.jpg"
+        ]
+      },
+      {
+        "group_id": 296,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_001186.jpg",
+          "Japan/train/images/Japan_003866.jpg"
+        ]
+      },
+      {
+        "group_id": 299,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_006820.jpg",
+          "Japan/train/images/Japan_002909.jpg",
+          "Japan/train/images/Japan_008919.jpg"
+        ]
+      },
+      {
+        "group_id": 306,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_000766.jpg",
+          "Czech/train/images/Czech_001553.jpg"
+        ]
+      },
+      {
+        "group_id": 307,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002086.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000395.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001040.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001352.jpg"
+        ]
+      },
+      {
+        "group_id": 313,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_006156.jpg",
+          "India/train/images/India_005065.jpg",
+          "India/train/images/India_005751.jpg"
+        ]
+      },
+      {
+        "group_id": 315,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002101.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001508.jpg"
+        ]
+      },
+      {
+        "group_id": 318,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_001275.jpg",
+          "Japan/train/images/Japan_003220.jpg"
+        ]
+      },
+      {
+        "group_id": 324,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008445.jpg",
+          "Norway/train/images/Norway_008014.jpg"
+        ]
+      },
+      {
+        "group_id": 325,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_001981.jpg",
+          "Czech/train/images/Czech_000771.jpg",
+          "Czech/train/images/Czech_001783.jpg"
+        ]
+      },
+      {
+        "group_id": 326,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_007438.jpg",
+          "Japan/train/images/Japan_004329.jpg",
+          "Japan/train/images/Japan_007325.jpg"
+        ]
+      },
+      {
+        "group_id": 330,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_008690.jpg",
+          "India/train/images/India_007015.jpg"
+        ]
+      },
+      {
+        "group_id": 331,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002179.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000708.jpg"
+        ]
+      },
+      {
+        "group_id": 334,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002465.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001930.jpg"
+        ]
+      },
+      {
+        "group_id": 336,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002446.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000279.jpg"
+        ]
+      },
+      {
+        "group_id": 341,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_002171.jpg",
+          "Czech/train/images/Czech_003488.jpg"
+        ]
+      },
+      {
+        "group_id": 342,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002202.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000946.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001414.jpg"
+        ]
+      },
+      {
+        "group_id": 345,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_005580.jpg",
+          "Japan/train/images/Japan_001853.jpg",
+          "Japan/train/images/Japan_006545.jpg"
+        ]
+      },
+      {
+        "group_id": 346,
+        "size": 5,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002402.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000134.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000362.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000862.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001371.jpg"
+        ]
+      },
+      {
+        "group_id": 347,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008748.jpg",
+          "Norway/train/images/Norway_001797.jpg",
+          "Norway/train/images/Norway_002288.jpg"
+        ]
+      },
+      {
+        "group_id": 350,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009982.jpg",
+          "Norway/train/images/Norway_002770.jpg"
+        ]
+      },
+      {
+        "group_id": 351,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009318.jpg",
+          "Norway/train/images/Norway_000444.jpg"
+        ]
+      },
+      {
+        "group_id": 354,
+        "size": 5,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008352.jpg",
+          "Norway/train/images/Norway_000966.jpg",
+          "Norway/train/images/Norway_003824.jpg",
+          "Norway/train/images/Norway_005969.jpg",
+          "Norway/train/images/Norway_007226.jpg"
+        ]
+      },
+      {
+        "group_id": 355,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009736.jpg",
+          "Norway/train/images/Norway_000118.jpg"
+        ]
+      },
+      {
+        "group_id": 356,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009970.jpg",
+          "Norway/train/images/Norway_007915.jpg"
+        ]
+      },
+      {
+        "group_id": 363,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008425.jpg",
+          "Norway/train/images/Norway_007483.jpg"
+        ]
+      },
+      {
+        "group_id": 371,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009481.jpg",
+          "Norway/train/images/Norway_006185.jpg"
+        ]
+      },
+      {
+        "group_id": 375,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008437.jpg",
+          "Norway/test/images/Norway_008505.jpg",
+          "Norway/test/images/Norway_009669.jpg",
+          "Norway/train/images/Norway_006505.jpg"
+        ]
+      },
+      {
+        "group_id": 378,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_004412.jpg",
+          "India/train/images/India_001420.jpg"
+        ]
+      },
+      {
+        "group_id": 380,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001885.jpg",
+          "India/train/images/India_001844.jpg",
+          "India/train/images/India_008918.jpg"
+        ]
+      },
+      {
+        "group_id": 381,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003689.jpg",
+          "India/train/images/India_004489.jpg"
+        ]
+      },
+      {
+        "group_id": 382,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009826.jpg",
+          "Norway/train/images/Norway_004199.jpg"
+        ]
+      },
+      {
+        "group_id": 387,
+        "size": 9,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002206.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000127.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000210.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000473.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000582.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001016.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001047.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001152.jpg"
+        ]
+      },
+      {
+        "group_id": 389,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002152.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000519.jpg"
+        ]
+      },
+      {
+        "group_id": 392,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_009727.jpg",
+          "India/train/images/India_005794.jpg",
+          "India/train/images/India_006922.jpg",
+          "India/train/images/India_009578.jpg"
+        ]
+      },
+      {
+        "group_id": 394,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_013118.jpg",
+          "Japan/train/images/Japan_005077.jpg"
+        ]
+      },
+      {
+        "group_id": 399,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_002111.jpg",
+          "Czech/train/images/Czech_000010.jpg",
+          "Czech/train/images/Czech_003155.jpg"
+        ]
+      },
+      {
+        "group_id": 400,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_006313.jpg",
+          "India/train/images/India_000543.jpg"
+        ]
+      },
+      {
+        "group_id": 403,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008800.jpg",
+          "Norway/train/images/Norway_004174.jpg"
+        ]
+      },
+      {
+        "group_id": 407,
+        "size": 8,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008746.jpg",
+          "Norway/train/images/Norway_001868.jpg",
+          "Norway/train/images/Norway_002342.jpg",
+          "Norway/train/images/Norway_003325.jpg",
+          "Norway/train/images/Norway_003858.jpg",
+          "Norway/train/images/Norway_004593.jpg",
+          "Norway/train/images/Norway_004778.jpg",
+          "Norway/train/images/Norway_005061.jpg"
+        ]
+      },
+      {
+        "group_id": 409,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_011362.jpg",
+          "Japan/train/images/Japan_011688.jpg",
+          "Japan/train/images/Japan_012327.jpg"
+        ]
+      },
+      {
+        "group_id": 419,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002056.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002201.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000956.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001850.jpg"
+        ]
+      },
+      {
+        "group_id": 426,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_006414.jpg",
+          "Japan/train/images/Japan_006187.jpg"
+        ]
+      },
+      {
+        "group_id": 430,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_007392.jpg",
+          "Japan/train/images/Japan_013116.jpg"
+        ]
+      },
+      {
+        "group_id": 433,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008481.jpg",
+          "Norway/train/images/Norway_003875.jpg"
+        ]
+      },
+      {
+        "group_id": 434,
+        "size": 14,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_004094.jpg",
+          "India/train/images/India_002558.jpg",
+          "India/train/images/India_003320.jpg",
+          "India/train/images/India_003414.jpg",
+          "India/train/images/India_003444.jpg",
+          "India/train/images/India_003496.jpg",
+          "India/train/images/India_003674.jpg",
+          "India/train/images/India_003842.jpg"
+        ]
+      },
+      {
+        "group_id": 439,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_001709.jpg",
+          "Japan/train/images/Japan_008393.jpg"
+        ]
+      },
+      {
+        "group_id": 441,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_006763.jpg",
+          "Japan/train/images/Japan_005617.jpg",
+          "Japan/train/images/Japan_010274.jpg",
+          "Japan/train/images/Japan_010483.jpg"
+        ]
+      },
+      {
+        "group_id": 443,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003604.jpg",
+          "India/train/images/India_003586.jpg"
+        ]
+      },
+      {
+        "group_id": 444,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_004400.jpg",
+          "India/train/images/India_004600.jpg"
+        ]
+      },
+      {
+        "group_id": 446,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009651.jpg",
+          "Norway/train/images/Norway_000509.jpg",
+          "Norway/train/images/Norway_006482.jpg"
+        ]
+      },
+      {
+        "group_id": 448,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002076.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000222.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000880.jpg"
+        ]
+      },
+      {
+        "group_id": 455,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009921.jpg",
+          "Norway/train/images/Norway_007725.jpg"
+        ]
+      },
+      {
+        "group_id": 456,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009339.jpg",
+          "Norway/train/images/Norway_001839.jpg"
+        ]
+      },
+      {
+        "group_id": 459,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_010107.jpg",
+          "Norway/train/images/Norway_005133.jpg"
+        ]
+      },
+      {
+        "group_id": 461,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_004995.jpg",
+          "India/train/images/India_002617.jpg",
+          "India/train/images/India_005324.jpg"
+        ]
+      },
+      {
+        "group_id": 466,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_006153.jpg",
+          "India/train/images/India_000884.jpg"
+        ]
+      },
+      {
+        "group_id": 467,
+        "size": 8,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001212.jpg",
+          "India/test/images/India_004137.jpg",
+          "India/test/images/India_004420.jpg",
+          "India/test/images/India_006573.jpg",
+          "India/train/images/India_001394.jpg",
+          "India/train/images/India_002312.jpg",
+          "India/train/images/India_009771.jpg",
+          "India/train/images/India_009829.jpg"
+        ]
+      },
+      {
+        "group_id": 469,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_012647.jpg",
+          "Japan/train/images/Japan_001402.jpg"
+        ]
+      },
+      {
+        "group_id": 471,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002336.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000538.jpg"
+        ]
+      },
+      {
+        "group_id": 476,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002137.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001659.jpg"
+        ]
+      },
+      {
+        "group_id": 479,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002046.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000111.jpg"
+        ]
+      },
+      {
+        "group_id": 480,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002370.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000068.jpg"
+        ]
+      },
+      {
+        "group_id": 484,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_004818.jpg",
+          "India/train/images/India_001665.jpg",
+          "India/train/images/India_002421.jpg",
+          "India/train/images/India_002538.jpg"
+        ]
+      },
+      {
+        "group_id": 485,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002233.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001364.jpg"
+        ]
+      },
+      {
+        "group_id": 495,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009898.jpg",
+          "Norway/train/images/Norway_003374.jpg"
+        ]
+      },
+      {
+        "group_id": 496,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_003334.jpg",
+          "Japan/train/images/Japan_009306.jpg",
+          "Japan/train/images/Japan_012598.jpg"
+        ]
+      },
+      {
+        "group_id": 498,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002073.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000220.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001400.jpg"
+        ]
+      },
+      {
+        "group_id": 500,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008225.jpg",
+          "Norway/test/images/Norway_008638.jpg",
+          "Norway/test/images/Norway_009836.jpg",
+          "Norway/train/images/Norway_007840.jpg"
+        ]
+      },
+      {
+        "group_id": 502,
+        "size": 9,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009750.jpg",
+          "Norway/test/images/Norway_010075.jpg",
+          "Norway/train/images/Norway_000674.jpg",
+          "Norway/train/images/Norway_001200.jpg",
+          "Norway/train/images/Norway_001704.jpg",
+          "Norway/train/images/Norway_002788.jpg",
+          "Norway/train/images/Norway_003360.jpg",
+          "Norway/train/images/Norway_006475.jpg"
+        ]
+      },
+      {
+        "group_id": 503,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008228.jpg",
+          "Norway/train/images/Norway_000571.jpg",
+          "Norway/train/images/Norway_002252.jpg",
+          "Norway/train/images/Norway_007830.jpg"
+        ]
+      },
+      {
+        "group_id": 504,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009008.jpg",
+          "Norway/train/images/Norway_004554.jpg",
+          "Norway/train/images/Norway_006398.jpg"
+        ]
+      },
+      {
+        "group_id": 513,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008423.jpg",
+          "Norway/train/images/Norway_003486.jpg"
+        ]
+      },
+      {
+        "group_id": 515,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009809.jpg",
+          "Norway/train/images/Norway_001556.jpg",
+          "Norway/train/images/Norway_008067.jpg"
+        ]
+      },
+      {
+        "group_id": 517,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008867.jpg",
+          "Norway/train/images/Norway_002599.jpg"
+        ]
+      },
+      {
+        "group_id": 519,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_008240.jpg",
+          "India/train/images/India_008107.jpg"
+        ]
+      },
+      {
+        "group_id": 524,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/train/images/India_006106.jpg",
+          "Japan/test/images/Japan_000139.jpg"
+        ]
+      },
+      {
+        "group_id": 525,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/train/images/India_006122.jpg",
+          "United_States/test/images/United_States_005875.jpg"
+        ]
+      },
+      {
+        "group_id": 527,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_004287.jpg",
+          "India/train/images/India_007853.jpg"
+        ]
+      },
+      {
+        "group_id": 528,
+        "size": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_000013.jpg",
+          "India/test/images/India_000287.jpg",
+          "India/test/images/India_006119.jpg",
+          "India/train/images/India_006407.jpg",
+          "India/train/images/India_007046.jpg",
+          "India/train/images/India_007687.jpg"
+        ]
+      },
+      {
+        "group_id": 531,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001688.jpg",
+          "India/train/images/India_001236.jpg",
+          "India/train/images/India_006651.jpg",
+          "India/train/images/India_007293.jpg"
+        ]
+      },
+      {
+        "group_id": 533,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002067.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000257.jpg"
+        ]
+      },
+      {
+        "group_id": 534,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002167.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001650.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001874.jpg"
+        ]
+      },
+      {
+        "group_id": 535,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_005926.jpg",
+          "Japan/train/images/Japan_006323.jpg"
+        ]
+      },
+      {
+        "group_id": 537,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_000328.jpg",
+          "India/train/images/India_001278.jpg"
+        ]
+      },
+      {
+        "group_id": 538,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001177.jpg",
+          "India/train/images/India_006834.jpg"
+        ]
+      },
+      {
+        "group_id": 541,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002417.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000758.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001056.jpg"
+        ]
+      },
+      {
+        "group_id": 542,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002357.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000477.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001354.jpg"
+        ]
+      },
+      {
+        "group_id": 543,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_001091.jpg",
+          "Czech/train/images/Czech_000643.jpg"
+        ]
+      },
+      {
+        "group_id": 548,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_002876.jpg",
+          "India/train/images/India_009117.jpg"
+        ]
+      },
+      {
+        "group_id": 550,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002351.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001533.jpg"
+        ]
+      },
+      {
+        "group_id": 557,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009080.jpg",
+          "Norway/train/images/Norway_006624.jpg"
+        ]
+      },
+      {
+        "group_id": 559,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_000767.jpg",
+          "India/train/images/India_005969.jpg",
+          "India/train/images/India_009758.jpg"
+        ]
+      },
+      {
+        "group_id": 562,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Japan/test/images/Japan_005415.jpg",
+          "Japan/train/images/Japan_000888.jpg",
+          "Japan/train/images/Japan_003492.jpg",
+          "Japan/train/images/Japan_011194.jpg"
+        ]
+      },
+      {
+        "group_id": 572,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_002807.jpg",
+          "India/train/images/India_006033.jpg"
+        ]
+      },
+      {
+        "group_id": 573,
+        "size": 5,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_006147.jpg",
+          "India/test/images/India_007840.jpg",
+          "India/train/images/India_002664.jpg",
+          "India/train/images/India_003143.jpg",
+          "India/train/images/India_009528.jpg"
+        ]
+      },
+      {
+        "group_id": 574,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_008098.jpg",
+          "India/train/images/India_001978.jpg",
+          "India/train/images/India_007586.jpg"
+        ]
+      },
+      {
+        "group_id": 576,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003264.jpg",
+          "India/test/images/India_003666.jpg",
+          "India/train/images/India_007308.jpg"
+        ]
+      },
+      {
+        "group_id": 578,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_003277.jpg",
+          "India/train/images/India_009353.jpg"
+        ]
+      },
+      {
+        "group_id": 583,
+        "size": 9,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_010195.jpg",
+          "Norway/train/images/Norway_000479.jpg",
+          "Norway/train/images/Norway_000817.jpg",
+          "Norway/train/images/Norway_002615.jpg",
+          "Norway/train/images/Norway_003807.jpg",
+          "Norway/train/images/Norway_004637.jpg",
+          "Norway/train/images/Norway_005079.jpg",
+          "Norway/train/images/Norway_005158.jpg"
+        ]
+      },
+      {
+        "group_id": 584,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009735.jpg",
+          "Norway/train/images/Norway_007925.jpg"
+        ]
+      },
+      {
+        "group_id": 585,
+        "size": 5,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_010105.jpg",
+          "Norway/train/images/Norway_002125.jpg",
+          "Norway/train/images/Norway_005231.jpg",
+          "Norway/train/images/Norway_006138.jpg",
+          "Norway/train/images/Norway_006572.jpg"
+        ]
+      },
+      {
+        "group_id": 586,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008934.jpg",
+          "Norway/train/images/Norway_000196.jpg",
+          "Norway/train/images/Norway_003849.jpg",
+          "Norway/train/images/Norway_007320.jpg"
+        ]
+      },
+      {
+        "group_id": 587,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009223.jpg",
+          "Norway/train/images/Norway_000280.jpg"
+        ]
+      },
+      {
+        "group_id": 590,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009319.jpg",
+          "Norway/train/images/Norway_006647.jpg",
+          "Norway/train/images/Norway_006820.jpg"
+        ]
+      },
+      {
+        "group_id": 591,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009090.jpg",
+          "Norway/train/images/Norway_004636.jpg"
+        ]
+      },
+      {
+        "group_id": 594,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001197.jpg",
+          "India/train/images/India_005102.jpg",
+          "India/train/images/India_006429.jpg"
+        ]
+      },
+      {
+        "group_id": 597,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Czech/test/images/Czech_000231.jpg",
+          "Czech/train/images/Czech_001079.jpg"
+        ]
+      },
+      {
+        "group_id": 600,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009187.jpg",
+          "Norway/train/images/Norway_002582.jpg"
+        ]
+      },
+      {
+        "group_id": 602,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_007603.jpg",
+          "India/train/images/India_003929.jpg"
+        ]
+      },
+      {
+        "group_id": 608,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_008089.jpg",
+          "India/train/images/India_007639.jpg"
+        ]
+      },
+      {
+        "group_id": 610,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_000082.jpg",
+          "India/train/images/India_004518.jpg"
+        ]
+      },
+      {
+        "group_id": 612,
+        "size": 3,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_001645.jpg",
+          "India/test/images/India_004529.jpg",
+          "India/train/images/India_003020.jpg"
+        ]
+      },
+      {
+        "group_id": 618,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_007700.jpg",
+          "India/train/images/India_004486.jpg"
+        ]
+      },
+      {
+        "group_id": 620,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_000795.jpg",
+          "India/train/images/India_002877.jpg"
+        ]
+      },
+      {
+        "group_id": 622,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_002709.jpg",
+          "India/train/images/India_006846.jpg"
+        ]
+      },
+      {
+        "group_id": 623,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "United_States/test/images/United_States_005371.jpg",
+          "United_States/train/images/United_States_001321.jpg"
+        ]
+      },
+      {
+        "group_id": 625,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_008155.jpg",
+          "India/train/images/India_008945.jpg"
+        ]
+      },
+      {
+        "group_id": 630,
+        "size": 2,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_005380.jpg",
+          "India/train/images/India_008720.jpg"
+        ]
+      },
+      {
+        "group_id": 633,
+        "size": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "members": [
+          "India/test/images/India_008756.jpg",
+          "India/train/images/India_007212.jpg",
+          "India/train/images/India_008592.jpg",
+          "India/train/images/India_009873.jpg"
+        ]
+      }
+    ],
+    "near_cross_country_groups": [
+      {
+        "group_id": 0,
+        "size": 11,
+        "countries": [
+          "China_Drone",
+          "Japan"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_000173.jpg",
+          "China_Drone/train/images/China_Drone_000581.jpg",
+          "China_Drone/train/images/China_Drone_000997.jpg",
+          "China_Drone/train/images/China_Drone_001132.jpg",
+          "China_Drone/train/images/China_Drone_001157.jpg",
+          "China_Drone/train/images/China_Drone_001399.jpg",
+          "China_Drone/train/images/China_Drone_001456.jpg",
+          "China_Drone/train/images/China_Drone_001702.jpg"
+        ]
+      },
+      {
+        "group_id": 30,
+        "size": 5,
+        "countries": [
+          "India",
+          "Norway"
+        ],
+        "members": [
+          "India/train/images/India_004508.jpg",
+          "India/train/images/India_005163.jpg",
+          "India/train/images/India_007287.jpg",
+          "Norway/train/images/Norway_001051.jpg",
+          "Norway/train/images/Norway_006971.jpg"
+        ]
+      },
+      {
+        "group_id": 36,
+        "size": 2,
+        "countries": [
+          "India",
+          "Norway"
+        ],
+        "members": [
+          "India/train/images/India_006721.jpg",
+          "Norway/train/images/Norway_003420.jpg"
+        ]
+      },
+      {
+        "group_id": 52,
+        "size": 226,
+        "countries": [
+          "China_Drone",
+          "Norway"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_001249.jpg",
+          "China_Drone/train/images/China_Drone_001693.jpg",
+          "Norway/test/images/Norway_008199.jpg",
+          "Norway/test/images/Norway_008201.jpg",
+          "Norway/test/images/Norway_008210.jpg",
+          "Norway/test/images/Norway_008267.jpg",
+          "Norway/test/images/Norway_008290.jpg",
+          "Norway/test/images/Norway_008308.jpg"
+        ]
+      },
+      {
+        "group_id": 54,
+        "size": 360,
+        "countries": [
+          "China_Drone",
+          "India",
+          "Japan",
+          "Norway",
+          "United_States"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_000186.jpg",
+          "China_Drone/train/images/China_Drone_000443.jpg",
+          "China_Drone/train/images/China_Drone_001031.jpg",
+          "China_Drone/train/images/China_Drone_001278.jpg",
+          "China_Drone/train/images/China_Drone_001941.jpg",
+          "India/test/images/India_000015.jpg",
+          "India/test/images/India_000070.jpg",
+          "India/test/images/India_000266.jpg"
+        ]
+      },
+      {
+        "group_id": 240,
+        "size": 16,
+        "countries": [
+          "China_Drone",
+          "India"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_000010.jpg",
+          "China_Drone/train/images/China_Drone_000169.jpg",
+          "China_Drone/train/images/China_Drone_000261.jpg",
+          "China_Drone/train/images/China_Drone_000347.jpg",
+          "China_Drone/train/images/China_Drone_000371.jpg",
+          "China_Drone/train/images/China_Drone_000499.jpg",
+          "China_Drone/train/images/China_Drone_000615.jpg",
+          "China_Drone/train/images/China_Drone_000753.jpg"
+        ]
+      },
+      {
+        "group_id": 263,
+        "size": 4,
+        "countries": [
+          "China_Drone",
+          "Norway"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_000668.jpg",
+          "China_Drone/train/images/China_Drone_001826.jpg",
+          "Norway/train/images/Norway_006462.jpg",
+          "Norway/train/images/Norway_007405.jpg"
+        ]
+      },
+      {
+        "group_id": 473,
+        "size": 2,
+        "countries": [
+          "India",
+          "Norway"
+        ],
+        "members": [
+          "India/train/images/India_000544.jpg",
+          "Norway/train/images/Norway_002452.jpg"
+        ]
+      },
+      {
+        "group_id": 524,
+        "size": 2,
+        "countries": [
+          "India",
+          "Japan"
+        ],
+        "members": [
+          "India/train/images/India_006106.jpg",
+          "Japan/test/images/Japan_000139.jpg"
+        ]
+      },
+      {
+        "group_id": 525,
+        "size": 2,
+        "countries": [
+          "India",
+          "United_States"
+        ],
+        "members": [
+          "India/train/images/India_006122.jpg",
+          "United_States/test/images/United_States_005875.jpg"
+        ]
+      },
+      {
+        "group_id": 526,
+        "size": 2,
+        "countries": [
+          "India",
+          "United_States"
+        ],
+        "members": [
+          "India/train/images/India_002819.jpg",
+          "United_States/train/images/United_States_001152.jpg"
+        ]
+      }
+    ],
+    "chained_groups": [
+      {
+        "group_id": 0,
+        "size": 11,
+        "diameter": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "China_Drone",
+          "Japan"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_000173.jpg",
+          "China_Drone/train/images/China_Drone_000581.jpg",
+          "China_Drone/train/images/China_Drone_000997.jpg",
+          "China_Drone/train/images/China_Drone_001132.jpg",
+          "China_Drone/train/images/China_Drone_001157.jpg",
+          "China_Drone/train/images/China_Drone_001399.jpg"
+        ]
+      },
+      {
+        "group_id": 3,
+        "size": 3,
+        "diameter": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "India"
+        ],
+        "members": [
+          "India/test/images/India_001937.jpg",
+          "India/train/images/India_006620.jpg",
+          "India/train/images/India_008381.jpg"
+        ]
+      },
+      {
+        "group_id": 4,
+        "size": 6,
+        "diameter": 5,
+        "splits": [
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/train/images/Norway_002515.jpg",
+          "Norway/train/images/Norway_004242.jpg",
+          "Norway/train/images/Norway_004453.jpg",
+          "Norway/train/images/Norway_004502.jpg",
+          "Norway/train/images/Norway_004925.jpg",
+          "Norway/train/images/Norway_005760.jpg"
+        ]
+      },
+      {
+        "group_id": 5,
+        "size": 8,
+        "diameter": 11,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008521.jpg",
+          "Norway/train/images/Norway_000390.jpg",
+          "Norway/train/images/Norway_000563.jpg",
+          "Norway/train/images/Norway_001932.jpg",
+          "Norway/train/images/Norway_003001.jpg",
+          "Norway/train/images/Norway_004556.jpg"
+        ]
+      },
+      {
+        "group_id": 8,
+        "size": 3,
+        "diameter": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "Japan"
+        ],
+        "members": [
+          "Japan/test/images/Japan_012070.jpg",
+          "Japan/train/images/Japan_008520.jpg",
+          "Japan/train/images/Japan_011207.jpg"
+        ]
+      },
+      {
+        "group_id": 9,
+        "size": 5,
+        "diameter": 7,
+        "splits": [
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/train/images/Norway_000704.jpg",
+          "Norway/train/images/Norway_003852.jpg",
+          "Norway/train/images/Norway_005195.jpg",
+          "Norway/train/images/Norway_005436.jpg",
+          "Norway/train/images/Norway_006245.jpg"
+        ]
+      },
+      {
+        "group_id": 11,
+        "size": 13,
+        "diameter": 11,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008279.jpg",
+          "Norway/test/images/Norway_008626.jpg",
+          "Norway/test/images/Norway_009091.jpg",
+          "Norway/train/images/Norway_000666.jpg",
+          "Norway/train/images/Norway_001653.jpg",
+          "Norway/train/images/Norway_002660.jpg"
+        ]
+      },
+      {
+        "group_id": 13,
+        "size": 3,
+        "diameter": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009268.jpg",
+          "Norway/train/images/Norway_003032.jpg",
+          "Norway/train/images/Norway_007384.jpg"
+        ]
+      },
+      {
+        "group_id": 14,
+        "size": 3,
+        "diameter": 6,
+        "splits": [
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/train/images/Norway_007259.jpg",
+          "Norway/train/images/Norway_007277.jpg",
+          "Norway/train/images/Norway_008012.jpg"
+        ]
+      },
+      {
+        "group_id": 19,
+        "size": 6,
+        "diameter": 8,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009309.jpg",
+          "Norway/test/images/Norway_010078.jpg",
+          "Norway/train/images/Norway_001129.jpg",
+          "Norway/train/images/Norway_003491.jpg",
+          "Norway/train/images/Norway_006005.jpg",
+          "Norway/train/images/Norway_007902.jpg"
+        ]
+      },
+      {
+        "group_id": 23,
+        "size": 3,
+        "diameter": 5,
+        "splits": [
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/train/images/Norway_004158.jpg",
+          "Norway/train/images/Norway_004876.jpg",
+          "Norway/train/images/Norway_007251.jpg"
+        ]
+      },
+      {
+        "group_id": 24,
+        "size": 4,
+        "diameter": 9,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/test/images/Norway_009561.jpg",
+          "Norway/train/images/Norway_004339.jpg",
+          "Norway/train/images/Norway_006099.jpg",
+          "Norway/train/images/Norway_007124.jpg"
+        ]
+      },
+      {
+        "group_id": 29,
+        "size": 3,
+        "diameter": 4,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/test/images/Norway_008215.jpg",
+          "Norway/train/images/Norway_005680.jpg",
+          "Norway/train/images/Norway_007063.jpg"
+        ]
+      },
+      {
+        "group_id": 30,
+        "size": 5,
+        "diameter": 9,
+        "splits": [
+          "train"
+        ],
+        "countries": [
+          "India",
+          "Norway"
+        ],
+        "members": [
+          "India/train/images/India_004508.jpg",
+          "India/train/images/India_005163.jpg",
+          "India/train/images/India_007287.jpg",
+          "Norway/train/images/Norway_001051.jpg",
+          "Norway/train/images/Norway_006971.jpg"
+        ]
+      },
+      {
+        "group_id": 31,
+        "size": 6,
+        "diameter": 10,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "China_MotorBike"
+        ],
+        "members": [
+          "China_MotorBike/test/images/China_MotorBike_002002.jpg",
+          "China_MotorBike/test/images/China_MotorBike_002259.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000268.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000506.jpg",
+          "China_MotorBike/train/images/China_MotorBike_000951.jpg",
+          "China_MotorBike/train/images/China_MotorBike_001496.jpg"
+        ]
+      },
+      {
+        "group_id": 38,
+        "size": 4,
+        "diameter": 7,
+        "splits": [
+          "train"
+        ],
+        "countries": [
+          "India"
+        ],
+        "members": [
+          "India/train/images/India_000677.jpg",
+          "India/train/images/India_004630.jpg",
+          "India/train/images/India_005117.jpg",
+          "India/train/images/India_008534.jpg"
+        ]
+      },
+      {
+        "group_id": 43,
+        "size": 5,
+        "diameter": 6,
+        "splits": [
+          "train"
+        ],
+        "countries": [
+          "Norway"
+        ],
+        "members": [
+          "Norway/train/images/Norway_003647.jpg",
+          "Norway/train/images/Norway_004214.jpg",
+          "Norway/train/images/Norway_004326.jpg",
+          "Norway/train/images/Norway_006984.jpg",
+          "Norway/train/images/Norway_007825.jpg"
+        ]
+      },
+      {
+        "group_id": 47,
+        "size": 3,
+        "diameter": 5,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "India"
+        ],
+        "members": [
+          "India/test/images/India_001862.jpg",
+          "India/train/images/India_000772.jpg",
+          "India/train/images/India_007218.jpg"
+        ]
+      },
+      {
+        "group_id": 49,
+        "size": 3,
+        "diameter": 6,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "India"
+        ],
+        "members": [
+          "India/test/images/India_008729.jpg",
+          "India/train/images/India_006526.jpg",
+          "India/train/images/India_008526.jpg"
+        ]
+      },
+      {
+        "group_id": 52,
+        "size": 226,
+        "diameter": 22,
+        "splits": [
+          "no_xml",
+          "train"
+        ],
+        "countries": [
+          "China_Drone",
+          "Norway"
+        ],
+        "members": [
+          "China_Drone/train/images/China_Drone_001249.jpg",
+          "China_Drone/train/images/China_Drone_001693.jpg",
+          "Norway/test/images/Norway_008199.jpg",
+          "Norway/test/images/Norway_008201.jpg",
+          "Norway/test/images/Norway_008210.jpg",
+          "Norway/test/images/Norway_008267.jpg"
+        ]
+      }
+    ],
+    "chained_group_count": 160,
+    "label_inconsistent_groups": [
+      {
+        "group_id": 5,
+        "size": 8,
+        "categories": {
+          "no_xml": 1,
+          "empty_xml": 3,
+          "only_target": 4
+        },
+        "members": [
+          {
+            "path": "Norway/test/images/Norway_008521.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_000390.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_000563.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_001932.jpg",
+            "category": "only_target",
+            "codes": [
+              "D40"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_003001.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_004556.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 9,
+        "size": 5,
+        "categories": {
+          "only_target": 4,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "Norway/train/images/Norway_000704.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_003852.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_005195.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10",
+              "D40"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_005436.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_006245.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 11,
+        "size": 13,
+        "categories": {
+          "no_xml": 3,
+          "empty_xml": 8,
+          "only_target": 2
+        },
+        "members": [
+          {
+            "path": "Norway/test/images/Norway_008279.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/test/images/Norway_008626.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/test/images/Norway_009091.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_000666.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_001653.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_002660.jpg",
+            "category": "empty_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 14,
+        "size": 3,
+        "categories": {
+          "empty_xml": 2,
+          "only_target": 1
+        },
+        "members": [
+          {
+            "path": "Norway/train/images/Norway_007259.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_007277.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_008012.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 17,
+        "size": 2,
+        "categories": {
+          "empty_xml": 1,
+          "only_target": 1
+        },
+        "members": [
+          {
+            "path": "Norway/train/images/Norway_004279.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_007954.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 19,
+        "size": 6,
+        "categories": {
+          "no_xml": 2,
+          "empty_xml": 2,
+          "only_target": 2
+        },
+        "members": [
+          {
+            "path": "Norway/test/images/Norway_009309.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/test/images/Norway_010078.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_001129.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_003491.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_006005.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_007902.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 29,
+        "size": 3,
+        "categories": {
+          "no_xml": 1,
+          "only_target": 1,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "Norway/test/images/Norway_008215.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_005680.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_007063.jpg",
+            "category": "empty_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 30,
+        "size": 5,
+        "categories": {
+          "only_target": 3,
+          "mixed_target_oos": 1,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "India/train/images/India_004508.jpg",
+            "category": "only_target",
+            "codes": [
+              "D20"
+            ]
+          },
+          {
+            "path": "India/train/images/India_005163.jpg",
+            "category": "only_target",
+            "codes": [
+              "D40"
+            ]
+          },
+          {
+            "path": "India/train/images/India_007287.jpg",
+            "category": "mixed_target_oos",
+            "codes": [
+              "D00",
+              "D44"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_001051.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_006971.jpg",
+            "category": "empty_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 32,
+        "size": 2,
+        "categories": {
+          "only_target": 1,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "Norway/train/images/Norway_000777.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_001360.jpg",
+            "category": "empty_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 48,
+        "size": 2,
+        "categories": {
+          "only_target": 1,
+          "only_oos": 1
+        },
+        "members": [
+          {
+            "path": "India/train/images/India_001682.jpg",
+            "category": "only_target",
+            "codes": [
+              "D20"
+            ]
+          },
+          {
+            "path": "India/train/images/India_005046.jpg",
+            "category": "only_oos",
+            "codes": [
+              "D44"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 52,
+        "size": 226,
+        "categories": {
+          "mixed_target_oos": 1,
+          "only_target": 46,
+          "no_xml": 46,
+          "empty_xml": 133
+        },
+        "members": [
+          {
+            "path": "China_Drone/train/images/China_Drone_001249.jpg",
+            "category": "mixed_target_oos",
+            "codes": [
+              "D00",
+              "Repair"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_001693.jpg",
+            "category": "only_target",
+            "codes": [
+              "D10"
+            ]
+          },
+          {
+            "path": "Norway/test/images/Norway_008199.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/test/images/Norway_008201.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/test/images/Norway_008210.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/test/images/Norway_008267.jpg",
+            "category": "no_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 54,
+        "size": 360,
+        "categories": {
+          "only_target": 135,
+          "no_xml": 70,
+          "empty_xml": 99,
+          "mixed_target_oos": 43,
+          "only_oos": 13
+        },
+        "members": [
+          {
+            "path": "China_Drone/train/images/China_Drone_000186.jpg",
+            "category": "only_target",
+            "codes": [
+              "D10"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_000443.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_001031.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_001278.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_001941.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "India/test/images/India_000015.jpg",
+            "category": "no_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 86,
+        "size": 2,
+        "categories": {
+          "only_target": 1,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "Norway/train/images/Norway_002679.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_006412.jpg",
+            "category": "empty_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 89,
+        "size": 4,
+        "categories": {
+          "no_xml": 2,
+          "only_target": 1,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "Norway/test/images/Norway_009164.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/test/images/Norway_010044.jpg",
+            "category": "no_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_001240.jpg",
+            "category": "only_target",
+            "codes": [
+              "D10"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_004277.jpg",
+            "category": "empty_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 91,
+        "size": 2,
+        "categories": {
+          "only_target": 1,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "Norway/train/images/Norway_001408.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "Norway/train/images/Norway_002444.jpg",
+            "category": "empty_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 92,
+        "size": 2,
+        "categories": {
+          "empty_xml": 1,
+          "only_target": 1
+        },
+        "members": [
+          {
+            "path": "Norway/train/images/Norway_002317.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "Norway/train/images/Norway_006932.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 111,
+        "size": 3,
+        "categories": {
+          "only_target": 2,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "India/train/images/India_002200.jpg",
+            "category": "only_target",
+            "codes": [
+              "D40"
+            ]
+          },
+          {
+            "path": "India/train/images/India_003136.jpg",
+            "category": "empty_xml",
+            "codes": []
+          },
+          {
+            "path": "India/train/images/India_003424.jpg",
+            "category": "only_target",
+            "codes": [
+              "D40"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 172,
+        "size": 2,
+        "categories": {
+          "mixed_target_oos": 1,
+          "only_oos": 1
+        },
+        "members": [
+          {
+            "path": "China_Drone/train/images/China_Drone_000450.jpg",
+            "category": "mixed_target_oos",
+            "codes": [
+              "D10",
+              "Repair"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_000684.jpg",
+            "category": "only_oos",
+            "codes": [
+              "Repair"
+            ]
+          }
+        ]
+      },
+      {
+        "group_id": 232,
+        "size": 2,
+        "categories": {
+          "only_target": 1,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "India/train/images/India_001400.jpg",
+            "category": "only_target",
+            "codes": [
+              "D20"
+            ]
+          },
+          {
+            "path": "India/train/images/India_008810.jpg",
+            "category": "empty_xml",
+            "codes": []
+          }
+        ]
+      },
+      {
+        "group_id": 240,
+        "size": 16,
+        "categories": {
+          "only_target": 14,
+          "only_oos": 1,
+          "empty_xml": 1
+        },
+        "members": [
+          {
+            "path": "China_Drone/train/images/China_Drone_000010.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_000169.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00",
+              "D10"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_000261.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_000347.jpg",
+            "category": "only_target",
+            "codes": [
+              "D10"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_000371.jpg",
+            "category": "only_oos",
+            "codes": [
+              "Repair"
+            ]
+          },
+          {
+            "path": "China_Drone/train/images/China_Drone_000499.jpg",
+            "category": "only_target",
+            "codes": [
+              "D00"
+            ]
+          }
+        ]
+      }
+    ],
+    "label_inconsistent_group_count": 79,
+    "s4t2_comparison": {
+      "s4t2_near_groups": 635,
+      "s4t2_images_in_groups": 2395,
+      "s4t2_skipped_buckets": 3,
+      "s4t2_skipped_images": 2077,
+      "delta_groups": 1,
+      "delta_images": 21
+    },
+    "uncertainty": {
+      "empty_xml_images": 11724,
+      "empty_xml_flagged_by_duplicate_evidence": 372,
+      "verified_empty_xml_candidates": 11352,
+      "only_oos_images": 2894,
+      "only_oos_contradicted_by_near_duplicate_target_image": 21
+    }
+  },
+  "part_c": {
+    "policy_pool_sizes": {
+      "policy_a_images": 23767,
+      "policy_b_images": 26661,
+      "policy_c_images": 35119,
+      "empty_xml_total": 11724,
+      "only_oos_total": 2894,
+      "no_xml_total": 9035,
+      "annotated_total": 38385,
+      "images_total": 47420
+    },
+    "simulations": {
+      "policy_a": {
+        "seed": 42,
+        "n_splits": 10,
+        "pool_images": 23767,
+        "pool_groups": 22966,
+        "group_size_distribution": {
+          "1": 22677,
+          "2": 197,
+          "3": 39,
+          "4": 20,
+          "5": 11,
+          "6": 5,
+          "7": 6,
+          "8": 1,
+          "10": 1,
+          "11": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "21": 1,
+          "25": 1,
+          "30": 1,
+          "47": 1,
+          "178": 1
+        },
+        "labels": {
+          "D10": 7113,
+          "D00": 7034,
+          "D40": 3538,
+          "D20": 5281
+        },
+        "splits": {
+          "train": {
+            "groups": 18372,
+            "images": 19017,
+            "retained_objects": 44005,
+            "images_pct": 80.01,
+            "objects_pct": 80.0,
+            "class_images": {
+              "D00": 10821,
+              "D10": 6139,
+              "D20": 6753,
+              "D40": 2955
+            },
+            "countries": {
+              "Japan": 6355,
+              "United_States": 3830,
+              "India": 2577,
+              "Norway": 2323,
+              "China_Drone": 1537,
+              "China_MotorBike": 1519,
+              "Czech": 876
+            }
+          },
+          "val": {
+            "groups": 2297,
+            "images": 2401,
+            "retained_objects": 5577,
+            "images_pct": 10.1,
+            "objects_pct": 10.14,
+            "class_images": {
+              "D00": 1369,
+              "D10": 799,
+              "D20": 825,
+              "D40": 358
+            },
+            "countries": {
+              "Japan": 759,
+              "United_States": 485,
+              "India": 324,
+              "Norway": 316,
+              "China_Drone": 212,
+              "China_MotorBike": 208,
+              "Czech": 97
+            }
+          },
+          "test": {
+            "groups": 2297,
+            "images": 2349,
+            "retained_objects": 5424,
+            "images_pct": 9.88,
+            "objects_pct": 9.86,
+            "class_images": {
+              "D00": 1358,
+              "D10": 771,
+              "D20": 834,
+              "D40": 361
+            },
+            "countries": {
+              "Japan": 786,
+              "United_States": 490,
+              "India": 322,
+              "Norway": 275,
+              "China_MotorBike": 207,
+              "China_Drone": 170,
+              "Czech": 99
+            }
+          }
+        },
+        "per_class_balance": {
+          "D00": {
+            "train": {
+              "images": 10821,
+              "objects": 20743,
+              "share_of_split_pct": 56.9,
+              "global_share_pct": 57.0,
+              "deviation_pp": -0.1,
+              "object_share_of_class_pct": 79.73
+            },
+            "val": {
+              "images": 1369,
+              "objects": 2698,
+              "share_of_split_pct": 57.02,
+              "global_share_pct": 57.0,
+              "deviation_pp": 0.02,
+              "object_share_of_class_pct": 10.37
+            },
+            "test": {
+              "images": 1358,
+              "objects": 2575,
+              "share_of_split_pct": 57.81,
+              "global_share_pct": 57.0,
+              "deviation_pp": 0.81,
+              "object_share_of_class_pct": 9.9
+            }
+          },
+          "D10": {
+            "train": {
+              "images": 6139,
+              "objects": 9457,
+              "share_of_split_pct": 32.28,
+              "global_share_pct": 32.44,
+              "deviation_pp": -0.16,
+              "object_share_of_class_pct": 79.94
+            },
+            "val": {
+              "images": 799,
+              "objects": 1208,
+              "share_of_split_pct": 33.28,
+              "global_share_pct": 32.44,
+              "deviation_pp": 0.84,
+              "object_share_of_class_pct": 10.21
+            },
+            "test": {
+              "images": 771,
+              "objects": 1165,
+              "share_of_split_pct": 32.82,
+              "global_share_pct": 32.44,
+              "deviation_pp": 0.38,
+              "object_share_of_class_pct": 9.85
+            }
+          },
+          "D20": {
+            "train": {
+              "images": 6753,
+              "objects": 8517,
+              "share_of_split_pct": 35.51,
+              "global_share_pct": 35.39,
+              "deviation_pp": 0.12,
+              "object_share_of_class_pct": 80.23
+            },
+            "val": {
+              "images": 825,
+              "objects": 1052,
+              "share_of_split_pct": 34.36,
+              "global_share_pct": 35.39,
+              "deviation_pp": -1.03,
+              "object_share_of_class_pct": 9.91
+            },
+            "test": {
+              "images": 834,
+              "objects": 1047,
+              "share_of_split_pct": 35.5,
+              "global_share_pct": 35.39,
+              "deviation_pp": 0.11,
+              "object_share_of_class_pct": 9.86
+            }
+          },
+          "D40": {
+            "train": {
+              "images": 2955,
+              "objects": 5288,
+              "share_of_split_pct": 15.54,
+              "global_share_pct": 15.46,
+              "deviation_pp": 0.08,
+              "object_share_of_class_pct": 80.81
+            },
+            "val": {
+              "images": 358,
+              "objects": 619,
+              "share_of_split_pct": 14.91,
+              "global_share_pct": 15.46,
+              "deviation_pp": -0.55,
+              "object_share_of_class_pct": 9.46
+            },
+            "test": {
+              "images": 361,
+              "objects": 637,
+              "share_of_split_pct": 15.37,
+              "global_share_pct": 15.46,
+              "deviation_pp": -0.09,
+              "object_share_of_class_pct": 9.73
+            }
+          }
+        },
+        "group_crossing_violations": 0,
+        "exact_hash_crossing_violations": 0
+      },
+      "policy_c": {
+        "seed": 42,
+        "n_splits": 10,
+        "pool_images": 35119,
+        "pool_groups": 34141,
+        "group_size_distribution": {
+          "1": 33733,
+          "2": 281,
+          "3": 63,
+          "4": 26,
+          "5": 13,
+          "6": 6,
+          "7": 7,
+          "8": 1,
+          "9": 1,
+          "10": 1,
+          "11": 1,
+          "13": 1,
+          "14": 1,
+          "15": 1,
+          "21": 1,
+          "25": 1,
+          "30": 1,
+          "47": 1,
+          "178": 1
+        },
+        "labels": {
+          "D10": 7113,
+          "none": 11175,
+          "D00": 7034,
+          "D40": 3538,
+          "D20": 5281
+        },
+        "splits": {
+          "train": {
+            "groups": 27313,
+            "images": 28103,
+            "retained_objects": 43994,
+            "images_pct": 80.02,
+            "objects_pct": 79.98,
+            "class_images": {
+              "D00": 10824,
+              "D10": 6163,
+              "D20": 6718,
+              "D40": 2944
+            },
+            "countries": {
+              "Japan": 6972,
+              "Norway": 6306,
+              "India": 5673,
+              "United_States": 3886,
+              "Czech": 2258,
+              "China_Drone": 1505,
+              "China_MotorBike": 1503
+            }
+          },
+          "val": {
+            "groups": 3414,
+            "images": 3487,
+            "retained_objects": 5530,
+            "images_pct": 9.93,
+            "objects_pct": 10.05,
+            "class_images": {
+              "D00": 1376,
+              "D10": 758,
+              "D20": 833,
+              "D40": 369
+            },
+            "countries": {
+              "Japan": 825,
+              "Norway": 820,
+              "India": 661,
+              "United_States": 476,
+              "Czech": 288,
+              "China_MotorBike": 223,
+              "China_Drone": 194
+            }
+          },
+          "test": {
+            "groups": 3414,
+            "images": 3529,
+            "retained_objects": 5482,
+            "images_pct": 10.05,
+            "objects_pct": 9.97,
+            "class_images": {
+              "D00": 1348,
+              "D10": 788,
+              "D20": 861,
+              "D40": 361
+            },
+            "countries": {
+              "Japan": 895,
+              "Norway": 793,
+              "India": 684,
+              "United_States": 443,
+              "Czech": 281,
+              "China_Drone": 225,
+              "China_MotorBike": 208
+            }
+          }
+        },
+        "per_class_balance": {
+          "D00": {
+            "train": {
+              "images": 10824,
+              "objects": 20774,
+              "share_of_split_pct": 38.52,
+              "global_share_pct": 38.58,
+              "deviation_pp": -0.06,
+              "object_share_of_class_pct": 79.85
+            },
+            "val": {
+              "images": 1376,
+              "objects": 2673,
+              "share_of_split_pct": 39.46,
+              "global_share_pct": 38.58,
+              "deviation_pp": 0.88,
+              "object_share_of_class_pct": 10.27
+            },
+            "test": {
+              "images": 1348,
+              "objects": 2569,
+              "share_of_split_pct": 38.2,
+              "global_share_pct": 38.58,
+              "deviation_pp": -0.38,
+              "object_share_of_class_pct": 9.87
+            }
+          },
+          "D10": {
+            "train": {
+              "images": 6163,
+              "objects": 9450,
+              "share_of_split_pct": 21.93,
+              "global_share_pct": 21.95,
+              "deviation_pp": -0.02,
+              "object_share_of_class_pct": 79.88
+            },
+            "val": {
+              "images": 758,
+              "objects": 1155,
+              "share_of_split_pct": 21.74,
+              "global_share_pct": 21.95,
+              "deviation_pp": -0.21,
+              "object_share_of_class_pct": 9.76
+            },
+            "test": {
+              "images": 788,
+              "objects": 1225,
+              "share_of_split_pct": 22.33,
+              "global_share_pct": 21.95,
+              "deviation_pp": 0.38,
+              "object_share_of_class_pct": 10.36
+            }
+          },
+          "D20": {
+            "train": {
+              "images": 6718,
+              "objects": 8503,
+              "share_of_split_pct": 23.9,
+              "global_share_pct": 23.95,
+              "deviation_pp": -0.05,
+              "object_share_of_class_pct": 80.1
+            },
+            "val": {
+              "images": 833,
+              "objects": 1051,
+              "share_of_split_pct": 23.89,
+              "global_share_pct": 23.95,
+              "deviation_pp": -0.06,
+              "object_share_of_class_pct": 9.9
+            },
+            "test": {
+              "images": 861,
+              "objects": 1062,
+              "share_of_split_pct": 24.4,
+              "global_share_pct": 23.95,
+              "deviation_pp": 0.45,
+              "object_share_of_class_pct": 10.0
+            }
+          },
+          "D40": {
+            "train": {
+              "images": 2944,
+              "objects": 5267,
+              "share_of_split_pct": 10.48,
+              "global_share_pct": 10.46,
+              "deviation_pp": 0.02,
+              "object_share_of_class_pct": 80.49
+            },
+            "val": {
+              "images": 369,
+              "objects": 651,
+              "share_of_split_pct": 10.58,
+              "global_share_pct": 10.46,
+              "deviation_pp": 0.12,
+              "object_share_of_class_pct": 9.95
+            },
+            "test": {
+              "images": 361,
+              "objects": 626,
+              "share_of_split_pct": 10.23,
+              "global_share_pct": 10.46,
+              "deviation_pp": -0.23,
+              "object_share_of_class_pct": 9.57
+            }
+          }
+        },
+        "group_crossing_violations": 0,
+        "exact_hash_crossing_violations": 0
+      }
+    },
+    "frozen_validation_test_policy": {
+      "written_once": false,
+      "note": "audit only - no split files were created"
+    }
+  }
+}

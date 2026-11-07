@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "description": "RoadVision AI target classes. The index in 'names' is the YOLO class id (TDD v1.1 section 4.3).",
+  "names": [
+    "D00",
+    "D10",
+    "D20",
+    "D40"
+  ],
+  "code_to_id": {
+    "D00": 0,
+    "D10": 1,
+    "D20": 2,
+    "D40": 3
+  },
+  "out_of_scope_codes_observed_in_rdd2022": [
+    "D01",
+    "D0w0",
+    "D11",
+    "D43",
+    "D44",
+    "D50",
+    "Repair",
+    "Block crack"
+  ]
+}

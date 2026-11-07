@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "description": "RoadVision AI canonical detection classes (PRD v1.1 §4.4, TDD v1.1 §4.3 Table 3). Single source of truth.",
+  "names": [
+    "D00",
+    "D10",
+    "D20",
+    "D40"
+  ],
+  "classes": [
+    {
+      "id": 0,
+      "code": "D00",
+      "label": "Longitudinal crack",
+      "description": "Longitudinal crack along the direction of traffic."
+    },
+    {
+      "id": 1,
+      "code": "D10",
+      "label": "Transverse crack",
+      "description": "Transverse crack perpendicular to the direction of traffic."
+    },
+    {
+      "id": 2,
+      "code": "D20",
+      "label": "Alligator crack",
+      "description": "Interconnected fatigue or alligator cracking."
+    },
+    {
+      "id": 3,
+      "code": "D40",
+      "label": "Pothole",
+      "description": "Pothole or structural bowl-shaped depression."
+    }
+  ],
+  "code_to_id": {
+    "D00": 0,
+    "D10": 1,
+    "D20": 2,
+    "D40": 3
+  },
+  "code_to_label": {
+    "D00": "Longitudinal crack",
+    "D10": "Transverse crack",
+    "D20": "Alligator crack",
+    "D40": "Pothole"
+  },
+  "id_to_label": {
+    "0": "Longitudinal crack",
+    "1": "Transverse crack",
+    "2": "Alligator crack",
+    "3": "Pothole"
+  }
+}
+

@@ -21,7 +21,7 @@ When making architectural, technical, or design decisions, adhere strictly to th
 The verified host development environment consists of:
 - **CPU**: AMD Ryzen processor (Windows 11)
 - **GPU**: AMD Radeon 780M Graphics (Integrated GPU)
-- **NVIDIA GPU / CUDA**: **NOT PRESENT**. `nvidia-smi` and `nvcc` are unavailable.
+- **NVIDIA GPU / CUDA**: **PRESENT**
 - **Python**: 3.11.9
 - **Node.js**: v24.19.0 / npm 11.16.0
 - **FFmpeg**: v9.0-full_build (Installed and active in system PATH)

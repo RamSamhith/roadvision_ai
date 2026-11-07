@@ -1,0 +1,608 @@
+[
+ {
+  "group_id": 54,
+  "size": 360,
+  "countries": {
+   "China_Drone": 5,
+   "India": 320,
+   "Japan": 8,
+   "Norway": 14,
+   "United_States": 13
+  },
+  "std_median": 82.03,
+  "std_min": 72.68,
+  "std_max": 88.06,
+  "brightness_median": 119.8,
+  "dims": {
+   "600x600": 1,
+   "720x720": 10,
+   "3650x2044": 1
+  },
+  "corr_median": 0.794,
+  "corr_min": 0.339,
+  "frac_corr_below_0_75": 0.4,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0054_size360.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 52,
+  "size": 226,
+  "countries": {
+   "China_Drone": 2,
+   "Norway": 224
+  },
+  "std_median": 75.68,
+  "std_min": 65.1,
+  "std_max": 86.17,
+  "brightness_median": 106.3,
+  "dims": {
+   "4040x2035": 12
+  },
+  "corr_median": 0.687,
+  "corr_min": 0.388,
+  "frac_corr_below_0_75": 0.75,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0052_size226.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 256,
+  "size": 37,
+  "countries": {
+   "Norway": 37
+  },
+  "std_median": 81.43,
+  "std_min": 78.49,
+  "std_max": 86.01,
+  "brightness_median": 119.8,
+  "dims": {
+   "4040x2035": 12
+  },
+  "corr_median": 0.868,
+  "corr_min": 0.444,
+  "frac_corr_below_0_75": 0.2,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0256_size37.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 418,
+  "size": 30,
+  "countries": {
+   "China_Drone": 30
+  },
+  "std_median": 14.23,
+  "std_min": 11.29,
+  "std_max": 15.61,
+  "brightness_median": 158.4,
+  "dims": {
+   "512x512": 12
+  },
+  "corr_median": 0.787,
+  "corr_min": 0.398,
+  "frac_corr_below_0_75": 0.4,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0418_size30.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 404,
+  "size": 25,
+  "countries": {
+   "China_Drone": 25
+  },
+  "std_median": 8.04,
+  "std_min": 4.74,
+  "std_max": 15.58,
+  "brightness_median": 174.0,
+  "dims": {
+   "512x512": 12
+  },
+  "corr_median": 0.467,
+  "corr_min": 0.022,
+  "frac_corr_below_0_75": 0.95,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0404_size25.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 278,
+  "size": 21,
+  "countries": {
+   "China_Drone": 21
+  },
+  "std_median": 16.01,
+  "std_min": 12.83,
+  "std_max": 16.97,
+  "brightness_median": 141.2,
+  "dims": {
+   "512x512": 12
+  },
+  "corr_median": 0.525,
+  "corr_min": 0.28,
+  "frac_corr_below_0_75": 0.85,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0278_size21.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 130,
+  "size": 17,
+  "countries": {
+   "China_MotorBike": 17
+  },
+  "std_median": 24.0,
+  "std_min": 23.78,
+  "std_max": 24.41,
+  "brightness_median": 150.3,
+  "dims": {
+   "512x512": 12
+  },
+  "corr_median": 0.717,
+  "corr_min": 0.48,
+  "frac_corr_below_0_75": 0.6,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0130_size17.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 240,
+  "size": 16,
+  "countries": {
+   "China_Drone": 15,
+   "India": 1
+  },
+  "std_median": 32.22,
+  "std_min": 14.18,
+  "std_max": 72.29,
+  "brightness_median": 130.8,
+  "dims": {
+   "512x512": 11,
+   "720x720": 1
+  },
+  "corr_median": 0.733,
+  "corr_min": -0.076,
+  "frac_corr_below_0_75": 0.55,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0240_size16.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 198,
+  "size": 14,
+  "countries": {
+   "China_MotorBike": 14
+  },
+  "std_median": 37.81,
+  "std_min": 34.54,
+  "std_max": 38.84,
+  "brightness_median": 157.3,
+  "dims": {
+   "512x512": 12
+  },
+  "corr_median": 0.934,
+  "corr_min": 0.875,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0198_size14.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 434,
+  "size": 14,
+  "countries": {
+   "India": 14
+  },
+  "std_median": 37.34,
+  "std_min": 35.31,
+  "std_max": 40.1,
+  "brightness_median": 157.4,
+  "dims": {
+   "720x720": 12
+  },
+  "corr_median": 0.899,
+  "corr_min": 0.817,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0434_size14.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 11,
+  "size": 13,
+  "countries": {
+   "Norway": 13
+  },
+  "std_median": 79.41,
+  "std_min": 77.82,
+  "std_max": 87.09,
+  "brightness_median": 134.3,
+  "dims": {
+   "4040x2035": 8,
+   "3650x2044": 4
+  },
+  "corr_median": 0.893,
+  "corr_min": 0.537,
+  "frac_corr_below_0_75": 0.3,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0011_size13.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 0,
+  "size": 11,
+  "countries": {
+   "China_Drone": 10,
+   "Japan": 1
+  },
+  "std_median": 15.23,
+  "std_min": 7.5,
+  "std_max": 59.61,
+  "brightness_median": 122.4,
+  "dims": {
+   "512x512": 10,
+   "1024x1024": 1
+  },
+  "corr_median": 0.688,
+  "corr_min": 0.369,
+  "frac_corr_below_0_75": 0.65,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0000_size11.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 138,
+  "size": 11,
+  "countries": {
+   "India": 11
+  },
+  "std_median": 32.17,
+  "std_min": 28.68,
+  "std_max": 34.3,
+  "brightness_median": 155.7,
+  "dims": {
+   "720x720": 11
+  },
+  "corr_median": 0.868,
+  "corr_min": 0.798,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0138_size11.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 180,
+  "size": 10,
+  "countries": {
+   "India": 10
+  },
+  "std_median": 29.65,
+  "std_min": 28.06,
+  "std_max": 30.55,
+  "brightness_median": 157.4,
+  "dims": {
+   "720x720": 10
+  },
+  "corr_median": 0.892,
+  "corr_min": 0.793,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0180_size10.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 447,
+  "size": 10,
+  "countries": {
+   "Norway": 10
+  },
+  "std_median": 63.1,
+  "std_min": 62.46,
+  "std_max": 64.13,
+  "brightness_median": 202.1,
+  "dims": {
+   "3643x2041": 10
+  },
+  "corr_median": 0.954,
+  "corr_min": 0.855,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "coherent visual duplicates",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0447_size10.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 387,
+  "size": 9,
+  "countries": {
+   "China_MotorBike": 9
+  },
+  "std_median": 30.87,
+  "std_min": 30.56,
+  "std_max": 31.33,
+  "brightness_median": 146.7,
+  "dims": {
+   "512x512": 9
+  },
+  "corr_median": 0.93,
+  "corr_min": 0.84,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0387_size9.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 502,
+  "size": 9,
+  "countries": {
+   "Norway": 9
+  },
+  "std_median": 50.63,
+  "std_min": 48.28,
+  "std_max": 56.54,
+  "brightness_median": 160.0,
+  "dims": {
+   "3643x2041": 9
+  },
+  "corr_median": 0.921,
+  "corr_min": 0.761,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0502_size9.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 583,
+  "size": 9,
+  "countries": {
+   "Norway": 9
+  },
+  "std_median": 54.65,
+  "std_min": 52.52,
+  "std_max": 55.58,
+  "brightness_median": 166.2,
+  "dims": {
+   "3643x2041": 9
+  },
+  "corr_median": 0.905,
+  "corr_min": 0.81,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0583_size9.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 5,
+  "size": 8,
+  "countries": {
+   "Norway": 8
+  },
+  "std_median": 78.66,
+  "std_min": 76.98,
+  "std_max": 80.88,
+  "brightness_median": 153.1,
+  "dims": {
+   "3650x2044": 8
+  },
+  "corr_median": 0.924,
+  "corr_min": 0.848,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0005_size8.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 206,
+  "size": 8,
+  "countries": {
+   "China_MotorBike": 8
+  },
+  "std_median": 17.89,
+  "std_min": 16.7,
+  "std_max": 18.35,
+  "brightness_median": 152.0,
+  "dims": {
+   "512x512": 8
+  },
+  "corr_median": 0.906,
+  "corr_min": 0.837,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0206_size8.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 407,
+  "size": 8,
+  "countries": {
+   "Norway": 8
+  },
+  "std_median": 35.1,
+  "std_min": 33.37,
+  "std_max": 37.22,
+  "brightness_median": 98.6,
+  "dims": {
+   "4040x2035": 8
+  },
+  "corr_median": 0.899,
+  "corr_min": 0.823,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0407_size8.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 467,
+  "size": 8,
+  "countries": {
+   "India": 8
+  },
+  "std_median": 81.53,
+  "std_min": 77.04,
+  "std_max": 85.73,
+  "brightness_median": 122.8,
+  "dims": {
+   "720x720": 8
+  },
+  "corr_median": 0.932,
+  "corr_min": 0.863,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "ambiguous",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0467_size8.jpg",
+  "visual_inspection": "not inspected"
+ },
+ {
+  "group_id": 30,
+  "size": 5,
+  "countries": {
+   "India": 3,
+   "Norway": 2
+  },
+  "std_median": 81.37,
+  "std_min": 41.12,
+  "std_max": 83.64,
+  "brightness_median": 135.3,
+  "dims": {
+   "720x720": 3,
+   "3650x2044": 2
+  },
+  "corr_median": 0.642,
+  "corr_min": 0.328,
+  "frac_corr_below_0_75": 0.75,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0030_size5.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 263,
+  "size": 4,
+  "countries": {
+   "China_Drone": 2,
+   "Norway": 2
+  },
+  "std_median": 41.5,
+  "std_min": 18.75,
+  "std_max": 70.83,
+  "brightness_median": 116.4,
+  "dims": {
+   "512x512": 2,
+   "4040x2035": 2
+  },
+  "corr_median": 0.567,
+  "corr_min": 0.522,
+  "frac_corr_below_0_75": 0.7,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0263_size4.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 36,
+  "size": 2,
+  "countries": {
+   "India": 1,
+   "Norway": 1
+  },
+  "std_median": 66.0,
+  "std_min": 64.12,
+  "std_max": 67.89,
+  "brightness_median": 132.6,
+  "dims": {
+   "720x720": 1,
+   "3650x2044": 1
+  },
+  "corr_median": 0.673,
+  "corr_min": 0.673,
+  "frac_corr_below_0_75": 1.0,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0036_size2.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 473,
+  "size": 2,
+  "countries": {
+   "India": 1,
+   "Norway": 1
+  },
+  "std_median": 66.13,
+  "std_min": 61.98,
+  "std_max": 70.28,
+  "brightness_median": 130.4,
+  "dims": {
+   "720x720": 1,
+   "3650x2044": 1
+  },
+  "corr_median": 0.501,
+  "corr_min": 0.501,
+  "frac_corr_below_0_75": 1.0,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0473_size2.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 524,
+  "size": 2,
+  "countries": {
+   "India": 1,
+   "Japan": 1
+  },
+  "std_median": 74.18,
+  "std_min": 66.4,
+  "std_max": 81.96,
+  "brightness_median": 85.4,
+  "dims": {
+   "720x720": 1,
+   "600x600": 1
+  },
+  "corr_median": 0.818,
+  "corr_min": 0.818,
+  "frac_corr_below_0_75": 0.0,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0524_size2.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 525,
+  "size": 2,
+  "countries": {
+   "India": 1,
+   "United_States": 1
+  },
+  "std_median": 50.07,
+  "std_min": 44.12,
+  "std_max": 56.02,
+  "brightness_median": 157.2,
+  "dims": {
+   "720x720": 1,
+   "640x640": 1
+  },
+  "corr_median": 0.433,
+  "corr_min": 0.433,
+  "frac_corr_below_0_75": 1.0,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0525_size2.jpg",
+  "visual_inspection": "inspected"
+ },
+ {
+  "group_id": 526,
+  "size": 2,
+  "countries": {
+   "India": 1,
+   "United_States": 1
+  },
+  "std_median": 66.37,
+  "std_min": 43.83,
+  "std_max": 88.91,
+  "brightness_median": 134.3,
+  "dims": {
+   "720x720": 1,
+   "640x640": 1
+  },
+  "corr_median": 0.538,
+  "corr_min": 0.538,
+  "frac_corr_below_0_75": 1.0,
+  "verdict": "likely over-merged",
+  "contact_sheet": "C:\\Users\\ramsa\\Desktop\\roadvision ai\\data\\reports\\audit\\contact_sheets\\group_0526_size2.jpg",
+  "visual_inspection": "inspected"
+ }
+]
