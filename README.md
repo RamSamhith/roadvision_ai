@@ -201,12 +201,6 @@ The repository includes a comprehensive automated test suite covering all CV pip
 
 ---
 
-## 12. Project Contributors
-
-- **Ram Samhith** — Computer Vision, Model Integration & Inference, Confidence Calibration, AI Pipeline Architecture.
-- **Shaik Shakeeb** — Backend Application Architecture, Database & REST API, Video Worker Orchestration, React Frontend UI.
-
----
 
 ## License
 
