@@ -9,11 +9,19 @@ from __future__ import annotations
 import logging
 import threading
 from pathlib import Path
-from typing import Callable, Dict, Optional, Union
+from typing import Any, Callable, Dict, Optional, Union
 
 import numpy as np
 
-from .config import DEFAULT_CONFIDENCE, DEVICE, MAX_VIDEO_JOB_SECONDS
+from .config import (
+    CONFIDENCE_BALANCED,
+    CONFIDENCE_HIGH_RECALL,
+    CONFIDENCE_MODES,
+    DEFAULT_CONFIDENCE,
+    DEVICE,
+    MAX_VIDEO_JOB_SECONDS,
+    validate_confidence,
+)
 from .image_engine import ImageEngine
 from .model_manager import ModelManager
 from .types import ModelStatus, VideoInspectionResult, VisionInspectionResult
@@ -25,9 +33,13 @@ log = logging.getLogger("roadvision.vision.service")
 class VisionService:
     """High-level facade for RoadVision AI computer vision capabilities."""
 
-    def __init__(self, primary_device: Optional[str] = None):
+    def __init__(
+        self,
+        primary_device: Optional[str] = None,
+        nms_args: Optional[Dict[str, Any]] = None,
+    ):
         self.device = primary_device or DEVICE
-        self.model_manager = ModelManager(primary_device=self.device)
+        self.model_manager = ModelManager(primary_device=self.device, nms_args=nms_args)
         self.image_engine = ImageEngine(self.model_manager)
         self.video_engine = VideoEngine(self.model_manager)
         self._is_initialized = False
@@ -47,7 +59,7 @@ class VisionService:
     def detect_image(
         self,
         image_input: Union[bytes, Path, str, np.ndarray],
-        conf: float = DEFAULT_CONFIDENCE,
+        conf: Union[float, str] = DEFAULT_CONFIDENCE,
         filename: Optional[str] = None,
         annotate: bool = True,
         output_path: Optional[Union[str, Path]] = None,
@@ -68,7 +80,7 @@ class VisionService:
     def detect_video(
         self,
         video_input: Union[Path, str],
-        conf: float = DEFAULT_CONFIDENCE,
+        conf: Union[float, str] = DEFAULT_CONFIDENCE,
         output_path: Optional[Union[str, Path]] = None,
         cancel_event: Optional[threading.Event] = None,
         progress_callback: Optional[Callable[[int, int, int, Dict[str, int]], None]] = None,

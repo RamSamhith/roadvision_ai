@@ -33,6 +33,7 @@ from .config import (
     NMS_ARGS,
     NMS_FREE_MODE,
     YOLO26N_FALLBACK_ENABLED,
+    validate_confidence,
 )
 from .errors import (
     InferenceRuntimeError,
@@ -86,6 +87,7 @@ def to_result(
     model_name: str,
     original_shape: Optional[Tuple[int, int]] = None,
     inference_time_ms: float = 0.0,
+    conf_threshold: float = DEFAULT_CONFIDENCE,
 ) -> DetectionResult:
     """Convert an Ultralytics Results object into a standardized DetectionResult.
 
@@ -135,6 +137,7 @@ def to_result(
         detections=detections,
         inference_time_ms=inference_time_ms,
         image_dimensions=(w, h),
+        conf_threshold=conf_threshold,
     )
 
 
@@ -301,16 +304,17 @@ class ModelManager:
     def predict(
         self,
         frame: np.ndarray,
-        conf: float = DEFAULT_CONFIDENCE,
+        conf: Union[float, str] = DEFAULT_CONFIDENCE,
         device: Optional[str] = None,
     ) -> DetectionResult:
         """Execute forward pass detection on an image frame.
 
         Args:
             frame: BGR image matrix (np.ndarray).
-            conf: Confidence threshold. Values outside
+            conf: Confidence threshold as a float [0.10, 0.90] or mode string
+                ('balanced' -> 0.25, 'high_recall' -> 0.15). Values outside
                 [MIN_CONFIDENCE, MAX_CONFIDENCE] are clamped and logged rather
-                than silently corrected.
+                than silently corrected. Strict rejection belongs at the API boundary.
             device: Optional device override.
 
         Returns:
@@ -319,9 +323,15 @@ class ModelManager:
         if self.model is None:
             raise ModelUnavailableError("No detection model is loaded or available")
 
-        # D-04: clamp to the documented range, but never silently. Strict
-        # rejection belongs at the API boundary (TDD v1.1 §10).
-        requested_conf = float(conf)
+        # Resolve mode strings or validate/clamp numeric confidence
+        if isinstance(conf, str):
+            try:
+                requested_conf = validate_confidence(conf)
+            except ValueError:
+                requested_conf = float(conf)
+        else:
+            requested_conf = float(conf)
+
         clamped_conf = max(MIN_CONFIDENCE, min(requested_conf, MAX_CONFIDENCE))
         if clamped_conf != requested_conf:
             log.warning(
@@ -357,6 +367,7 @@ class ModelManager:
                     model_name=self.active or "unknown",
                     original_shape=frame.shape[:2],
                     inference_time_ms=elapsed_ms,
+                    conf_threshold=clamped_conf,
                 )
             except RuntimeError as e:
                 err_str = str(e)

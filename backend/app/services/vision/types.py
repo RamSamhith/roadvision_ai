@@ -39,6 +39,7 @@ class DetectionResult:
     detections: List[Detection]
     inference_time_ms: float = 0.0
     image_dimensions: Tuple[int, int] = (0, 0)  # (width, height)
+    conf_threshold: float = 0.25
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert result to dictionary matching TDD v1.1 §6 and §10.3 specification."""
@@ -51,6 +52,7 @@ class DetectionResult:
             "detections": [d.to_dict() for d in self.detections],
             "inference_time_ms": round(self.inference_time_ms, 2),
             "image_dimensions": list(self.image_dimensions),
+            "conf_threshold": round(self.conf_threshold, 4),
         }
 
 
@@ -71,6 +73,7 @@ class VisionInspectionResult:
         d["models_used"] = list(self.models_used)
         d["device"] = self.device
         d["success"] = self.success
+        d["conf_threshold"] = round(self.result.conf_threshold, 4)
         if self.annotated_output_path:
             d["annotated_output_path"] = self.annotated_output_path
         if self.error_message:

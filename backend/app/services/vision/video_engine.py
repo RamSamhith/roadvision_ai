@@ -33,6 +33,9 @@ from .annotate import annotate_image
 from .classes import CLASS_CODES
 from .config import (
     ALLOWED_VIDEO_EXTENSIONS,
+    CONFIDENCE_BALANCED,
+    CONFIDENCE_HIGH_RECALL,
+    CONFIDENCE_MODES,
     DEFAULT_CONFIDENCE,
     MAX_CONFIDENCE,
     MAX_VIDEO_BYTES,
@@ -42,6 +45,7 @@ from .config import (
     MAX_VIDEO_RESOLUTION,
     MIN_CONFIDENCE,
     REPO_ROOT,
+    validate_confidence,
 )
 from .errors import (
     FFmpegExecutionError,
@@ -257,7 +261,7 @@ class VideoEngine:
     def process_video(
         self,
         video_input: Union[str, Path],
-        conf: float = DEFAULT_CONFIDENCE,
+        conf: Union[float, str] = DEFAULT_CONFIDENCE,
         output_path: Optional[Union[str, Path]] = None,
         cancel_event: Optional[threading.Event] = None,
         progress_callback: Optional[Callable[[int, int, int, Dict[str, int]], None]] = None,
@@ -268,9 +272,10 @@ class VideoEngine:
 
         Args:
             video_input: Path to source video file (MP4 or AVI).
-            conf: Confidence threshold [0.10, 0.90]. Values outside the range are
-                clamped and logged; strict rejection is enforced at the API
-                boundary (TDD v1.1 §10).
+            conf: Confidence threshold as a float [0.10, 0.90] or mode string
+                ('balanced' -> 0.25, 'high_recall' -> 0.15). Values outside the
+                range are clamped and logged; strict rejection is enforced at the
+                API boundary (TDD v1.1 §10).
             output_path: Target path for the annotated MP4 video.
             cancel_event: Optional threading.Event to signal job cancellation.
             progress_callback: Optional callback(frames_done, total_frames, hits, counts).
@@ -303,9 +308,15 @@ class VideoEngine:
         else:
             out_p = Path(output_path).resolve()
 
-        # D-04: out-of-range confidence is clamped (documented contract) but never
-        # silently. Strict rejection belongs at the API boundary (TDD v1.1 §10).
-        requested_conf = float(conf)
+        # D-04: Resolve mode strings or validate/clamp confidence
+        if isinstance(conf, str):
+            try:
+                requested_conf = validate_confidence(conf)
+            except ValueError:
+                requested_conf = float(conf)
+        else:
+            requested_conf = float(conf)
+
         clamped_conf = max(MIN_CONFIDENCE, min(requested_conf, MAX_CONFIDENCE))
         if clamped_conf != requested_conf:
             log.warning(

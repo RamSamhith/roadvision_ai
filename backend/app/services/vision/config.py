@@ -6,9 +6,10 @@ device resolution, and configuration-driven provisional operational limits (Q-01
 
 from __future__ import annotations
 
+import math
 import os
 from pathlib import Path
-from typing import Any, Dict, Final, Set, Tuple
+from typing import Any, Dict, Final, Set, Tuple, Union
 
 import torch
 
@@ -64,6 +65,54 @@ DEFAULT_IMGSZ: Final[int] = 640
 DEFAULT_CONFIDENCE: Final[float] = 0.25
 MIN_CONFIDENCE: Final[float] = 0.10
 MAX_CONFIDENCE: Final[float] = 0.90
+
+CONFIDENCE_BALANCED: Final[float] = 0.25
+CONFIDENCE_HIGH_RECALL: Final[float] = 0.15
+
+CONFIDENCE_MODES: Final[Dict[str, float]] = {
+    "balanced": CONFIDENCE_BALANCED,
+    "high_recall": CONFIDENCE_HIGH_RECALL,
+}
+
+
+def validate_confidence(conf: Any) -> float:
+    """Validate and resolve a requested confidence threshold.
+
+    Accepts a float within [MIN_CONFIDENCE, MAX_CONFIDENCE] or a mode string
+    ('balanced' -> 0.25, 'high_recall' -> 0.15).
+
+    Raises:
+        ValueError: If conf is non-numeric, NaN, infinite, outside the allowed
+            [MIN_CONFIDENCE, MAX_CONFIDENCE] range, or an unrecognized mode string.
+    """
+    if isinstance(conf, str):
+        mode_key = conf.strip().lower()
+        if mode_key in CONFIDENCE_MODES:
+            return CONFIDENCE_MODES[mode_key]
+        try:
+            val = float(conf)
+        except ValueError:
+            valid_modes = list(CONFIDENCE_MODES.keys())
+            raise ValueError(
+                f"Invalid confidence mode '{conf}'. Expected one of {valid_modes} "
+                f"or a float between {MIN_CONFIDENCE} and {MAX_CONFIDENCE}."
+            )
+    else:
+        try:
+            val = float(conf)
+        except (TypeError, ValueError) as e:
+            raise ValueError(f"Confidence threshold must be numeric, got {type(conf)}: {e}")
+
+    if math.isnan(val) or math.isinf(val):
+        raise ValueError("Confidence threshold cannot be NaN or infinite.")
+
+    if val < MIN_CONFIDENCE or val > MAX_CONFIDENCE:
+        raise ValueError(
+            f"Confidence threshold {val} is outside valid range "
+            f"[{MIN_CONFIDENCE}, {MAX_CONFIDENCE}]."
+        )
+    return val
+
 
 # End-to-end NMS-free mode (TDD v1.1 §3.4, Q-02 ratified).
 # When nms=False, Ultralytics uses native end-to-end head output without traditional IoU clustering.

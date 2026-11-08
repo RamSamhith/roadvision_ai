@@ -25,6 +25,9 @@ from .config import (
     ALLOWED_IMAGE_EXTENSIONS,
     ALLOWED_VIDEO_EXTENSIONS,
     CLASSES_JSON_PATH,
+    CONFIDENCE_BALANCED,
+    CONFIDENCE_HIGH_RECALL,
+    CONFIDENCE_MODES,
     DEFAULT_CONFIDENCE,
     DEFAULT_IMGSZ,
     DEVICE,
@@ -47,6 +50,7 @@ from .config import (
     NMS_FREE_MODE,
     PROVISIONAL_LIMITS_NOTE,
     get_primary_device,
+    validate_confidence,
 )
 from .errors import (
     FFmpegExecutionError,

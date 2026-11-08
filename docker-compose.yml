@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: roadvision-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ROADVISION_DATA_DIR=/app/data
+      - ROADVISION_DEVICE=cpu
+    volumes:
+      - roadvision-data:/app/data
+      - ./models:/app/models:ro
+    restart: unless-stopped
+
+volumes:
+  roadvision-data:
+    driver: local
+

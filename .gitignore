@@ -58,8 +58,11 @@ models/weights/*
 *.engine
 *.tflite
 
-# Node / Frontend (Owned by Shakib in separate repository; excluded from Ram CV repo)
-frontend/
+# Node / Frontend Build & Runtime
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

@@ -102,7 +102,7 @@ class ImageEngine:
     def process_image(
         self,
         image_input: Union[bytes, Path, str, np.ndarray],
-        conf: float = DEFAULT_CONFIDENCE,
+        conf: Union[float, str] = DEFAULT_CONFIDENCE,
         filename: Optional[str] = None,
         annotate: bool = True,
         output_path: Optional[Union[str, Path]] = None,
@@ -111,7 +111,8 @@ class ImageEngine:
 
         Args:
             image_input: Raw image bytes, file path, or np.ndarray.
-            conf: Confidence threshold (default 0.25).
+            conf: Confidence threshold as a float [0.10, 0.90] or mode string
+                ('balanced' -> 0.25, 'high_recall' -> 0.15).
             filename: Original filename (used for extension checking if bytes provided).
             annotate: Whether to generate visual bounding box annotations.
             output_path: Optional disk path to save the annotated output.
